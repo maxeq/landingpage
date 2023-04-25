@@ -5,21 +5,13 @@
 body {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 14px;
+  line-height: 26px;
 }
 
 .image-container {
   position: relative;
 }
 
-.image-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-}
 
 .logo-image {
   height: 48px;
@@ -31,4 +23,84 @@ body {
 
 .statue-image {
   height: 654px;
+  background-image: url('/img/87ecf7e9db6ac60e074a70c57e7cc509.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+
+.statue-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+/* ul */
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+  width: 153.5px;
+  height: 56px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+  ul {
+    flex-direction: row;
+  }
+}
+
+/* li */
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 153.5px;
+  height: 26px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+/* dot */
+.dot {
+  box-sizing: border-box;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #00B894;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* Live, Work */
+.text {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+/* Work */
+.work {
+  width: 35px;
+  height: 26px;
 }
