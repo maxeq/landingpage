@@ -16,6 +16,10 @@ module.exports = {
       lineHeight: {
         '42px': '42px',
       },
+      textColor: {
+        'united': '#0A3161',
+        'states': '#B31942',
+      },
     },
   },
   plugins: [],
