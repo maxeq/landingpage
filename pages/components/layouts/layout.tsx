@@ -8,7 +8,7 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
     return (
         <div className="min-h-screen">
-            <div className="mx-auto max-w-[1440px]">
+            <div className="mx-auto">
                 <main className="container mx-auto">
                     {children}
                 </main>

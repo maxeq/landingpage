@@ -22,34 +22,8 @@ body {
 }
 
 .statue-image {
-  height: 654px;
   background-image: url('/img/87ecf7e9db6ac60e074a70c57e7cc509.jpg');
-  background-size: cover;
-  background-position: center;
   position: absolute;
-}
-
-.statue-image::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-}
-
-.compare-table {
-  display: flex;
-  background-image: url('/img/compare-table.jpg');
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  z-index: 0;
-  height: 1098px;
-left: 0px;
-top: 0px;
-position: absolute;
 }
 
 /* ul */
