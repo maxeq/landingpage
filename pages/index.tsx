@@ -108,7 +108,7 @@ export default function Home() {
             <p className="text-[24px] font-extrabold"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
             <p className="align-top">Comparing the American visa and green card in all aspects of life will help you decide which option suits you best.</p>
           </div>
-          <div className="compare-table-slider-header">
+          <div className="compare-table-slider-header flex items-center justify-center">
             <div className="Green Card px-16 p-3 border border-[#F3F3F3] rounded-lg font-extrabold text-[18px] shadow-slate-200/50 shadow-xl">
               <span className="text-[#00B894]">Green</span> Card</div>
           </div>
