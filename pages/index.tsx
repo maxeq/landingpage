@@ -113,24 +113,89 @@ export default function Home() {
               <span className="text-[#00B894]">Green</span> Card</div>
           </div>
           <table className="flex flex-col items-start p-0">
-            <tr className="gap-4 py-4 px-4 items-center justify-between flex flex-row bg-[#0A31610D] w-full">
-              <td className="flex flex-row items-center p-0 gap-4 font-bold">
-                <img src="img/vector.svg" alt="Work permit" />
-                Work Permit
-              </td>
-              <td className="flex flex-row items-center p-0 gap-4">
-                <img src="img/yes-icon.svg" alt="Yes" />
-              </td>
-            </tr>
-            {/* <tr className="gap-4 py-4 px-4 items-center justify-between flex flex-row bg-white w-full">
-              <td className="flex flex-row items-center p-0 gap-4 font-bold">
-                <img src="img/vector2.svg" alt="Family" />
-                Family
-              </td>
-              <td className="flex flex-row items-center p-0 gap-4">
-                <img src="img/yes-icon.svg" alt="Yes" />
-              </td>
-            </tr> */}
+            <tbody className="w-full h-full">
+              <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-[#0A31610D]">
+                <td className="flex flex-row items-center gap-4">
+                  <img src="img/table/Vector.svg" alt="Work permit" />
+                  Work Permit
+                </td>
+                <td className="flex flex-row items-center">
+                  <img src="img/table/yes-icon.svg" alt="Yes" />
+                </td>
+              </tr>
+              <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-white">
+                <td className="flex flex-row items-center gap-4">
+                  <img src="img/table/Vector-1.svg" alt="Family" />
+                  Family
+                </td>
+                <td className="flex flex-row items-center">
+                  1 for all
+                </td>
+              </tr>
+              <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-[#0A31610D]">
+                <td className="flex flex-row items-center gap-4">
+                  <img src="img/table/Vector-2.svg" alt="Work permit" />
+                  Validity
+                </td>
+                <td className="flex flex-row items-center">
+                  Life-long
+                </td>
+              </tr>
+              <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-white">
+                <td className="flex flex-row items-center gap-4">
+                  <img src="img/table/Vector-3.svg" alt="Work permit" />
+                  Citezenship
+                </td>
+                <td className="flex flex-row items-center">
+                  <img src="img/table/yes-icon.svg" alt="Yes" />
+                </td>
+              </tr>
+              <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-[#0A31610D]">
+                <td className="flex flex-row items-center gap-4">
+                  <img src="img/table/Vector-4.svg" alt="Work permit" />
+                  Study
+                </td>
+                <td className="flex flex-row items-center">
+                  Up to 80% cheaper
+                </td>
+              </tr>
+              <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-white">
+                <td className="flex flex-row items-center gap-4">
+                  <img src="img/table/Vector-5.svg" alt="Work permit" />
+                  Free
+                </td>
+                <td className="flex flex-row items-center">
+                  <img src="img/table/yes-icon.svg" alt="Yes" />
+                </td>
+              </tr>
+              <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-[#0A31610D]">
+                <td className="flex flex-row items-center gap-4">
+                  <img src="img/table/Vector-6.svg" alt="Work permit" />
+                  US Travel
+                </td>
+                <td className="flex flex-row items-center">
+                  Free
+                </td>
+              </tr>
+              <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-white">
+                <td className="flex flex-row items-center gap-4">
+                  <img src="img/table/Vector-7.svg" alt="Work permit" />
+                  Right to vote
+                </td>
+                <td className="flex flex-row items-center">
+                  <img src="img/table/yes-icon.svg" alt="Yes" />
+                </td>
+              </tr>
+              <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-[#0A31610D]">
+                <td className="flex flex-row items-center gap-4">
+                  <img src="img/table/Vector-8.svg" alt="Work permit" />
+                  Additional fees
+                </td>
+                <td className="flex flex-row items-center">
+                  No
+                </td>
+              </tr>
+            </tbody>
           </table>
 
           <div className="compare-table-table"></div>

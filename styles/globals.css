@@ -8,6 +8,10 @@ body {
   line-height: 26px;
 }
 
+tr {
+height: 68px;
+}
+
 .logo-image {
   height: 48px;
 }
