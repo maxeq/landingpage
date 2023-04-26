@@ -33,15 +33,13 @@ export default function Home() {
       </header>
 
       {/* // 1st block*/}
-
       {/* background */}
-
       {/* background
         {/* solutions */}
-      <div className="statue-image py-8 px-4 h-[654px] md:h-[1440px] bg-cover bg-center md:bg-left bg-black bg-opacity-10 md:bg-opacity-0 md:bg-no-repeat">
+      <div className="statue-image py-8 px-4 h-[654px] bg-cover bg-center bg-black bg-opacity-10">
         {/* h1 with desc */}
         <div className="gap-1">
-          <h1 className="md:text-[26px] font-extrabold text-28px leading-42px items-start order-1 text-white lg:text-[40px]">Get legal immigration to the <span className="text-united">United</span> <span className="text-states">States</span> today</h1>
+          <h1 className="md:text-[40px] font-extrabold text-28px leading-42px items-start order-1 text-white">Get legal immigration to the <span className="text-united">United</span> <span className="text-states">States</span> today</h1>
           <p className="text-[#FFFFFF] leading-[26px] font-extralight">We are helping thousands of people annually with obtaining their visas and Green Cards to the United States legally.</p>
         </div>
         {/* h1 with desc */}
