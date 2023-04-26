@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import react from 'react'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -101,11 +103,36 @@ export default function Home() {
         {/* // 1st block */}
         {/* Compare table */}
         <div className="compare-table flex flex-col item-start py-8 gap-4">
-          <div className="compare-table-title flex flex-col items-start py-0 px-4 z-10 flex-grow-0 flex-none">
-            <p>US Visa vs. Green Card</p>
-            <p>Comparing the American visa and green card in all aspects of life will help you decide which option suits you best.</p>
+          <div className="compare-background opacity-50"></div>
+          <div className="compare-table-title gap-1 px-4">
+            <p className="text-[24px] font-extrabold"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
+            <p className="align-top">Comparing the American visa and green card in all aspects of life will help you decide which option suits you best.</p>
           </div>
-          <div className="compare-table-slider-header"></div>
+          <div className="compare-table-slider-header">
+            <div className="Green Card px-16 p-3 border border-[#F3F3F3] rounded-lg font-extrabold text-[18px] shadow-slate-200/50 shadow-xl">
+              <span className="text-[#00B894]">Green</span> Card</div>
+          </div>
+          <table className="flex flex-col items-start p-0">
+            <tr className="gap-4 py-4 px-4 items-center justify-between flex flex-row bg-[#0A31610D] w-full">
+              <td className="flex flex-row items-center p-0 gap-4 font-bold">
+                <img src="img/vector.svg" alt="Work permit" />
+                Work Permit
+              </td>
+              <td className="flex flex-row items-center p-0 gap-4">
+                <img src="img/yes-icon.svg" alt="Yes" />
+              </td>
+            </tr>
+            {/* <tr className="gap-4 py-4 px-4 items-center justify-between flex flex-row bg-white w-full">
+              <td className="flex flex-row items-center p-0 gap-4 font-bold">
+                <img src="img/vector2.svg" alt="Family" />
+                Family
+              </td>
+              <td className="flex flex-row items-center p-0 gap-4">
+                <img src="img/yes-icon.svg" alt="Yes" />
+              </td>
+            </tr> */}
+          </table>
+
           <div className="compare-table-table"></div>
           <div className="compare-table-slider-bottom"></div>
 
