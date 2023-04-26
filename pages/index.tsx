@@ -6,24 +6,44 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <main>
-      <header className="px-4 h-16">
-        <nav className="flex justify-between py-2">
+      <header className="">
+
+        <nav className="mobile-nav flex justify-between py-2 md:hidden px-4 h-16">
           <img src="img/logo.png" alt="Brand Logo" className="logo-image" />
           <div className="flex items-center">
             <img src="img/button.svg" alt="Navigation Bar" className="mobile-burger" />
           </div>
         </nav>
+        <nav className="desktop-nav hidden md:flex justify-between items-center py-4 px-20 absolute bg-white left-0 right-0">
+          <div className="flex items-center">
+            <img src="img/logo.png" alt="Brand Logo" className="logo-image" />
+          </div>
+          <div className="flex items-center gap-8">
+            <div className="flex items-center gap-8 text-[16px] font-bold">
+              <p className=""><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
+              <p>About <span className="text-[#00B894]">Green</span> Card</p>
+              <p>About DV Immigration</p>
+              <p>FAQ</p>
+              <p>Contacts</p>
+            </div>
+            <button className="bg-[#00B894] rounded-[4px] py-2 px-[24px] text-white border items-center font-bold">
+              Contact us
+            </button>
+          </div>
+        </nav>
+
+
       </header>
       {/* // 1st block*/}
-      <div className="statue-image">
+      <div className="md:hidden statue-image flex-col gap-8 py-8 px-4 items-start flex isolate order-1">
         {/* background */}
 
         {/* background
         {/* solutions */}
-        <div className="h-[648px] isolate py-8 px-4">
+        <div className="h-[648px]  isolate flex-none order-1 flex-grow-0">
           {/* h1 with desc */}
           <div className="gap-1">
-            <h1 className="font-extrabold text-28px leading-42px items-start order-1 text-white">Get legal immigration to the <span className="text-united">United</span> <span className="text-states">States</span> today</h1>
+            <h1 className="font-extrabold text-28px leading-42px items-start order-1 text-white lg:text-[40px]">Get legal immigration to the <span className="text-united">United</span> <span className="text-states">States</span> today</h1>
             <p className="text-[#FFFFFF] leading-[26px] font-extralight">We are helping thousands of people annually with obtaining their visas and Green Cards to the United States legally.</p>
           </div>
           {/* h1 with desc */}
@@ -84,7 +104,8 @@ export default function Home() {
           </div>
           {/* // 1st block */}
           {/* Compare table */}
-          <div className="compare-table">
+          <div className="compare-table order-2 flex flex-col item-start py-8 gap-4">
+
 
           </div>
 
