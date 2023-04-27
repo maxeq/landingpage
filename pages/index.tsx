@@ -52,7 +52,7 @@ export default function Home() {
                 <div className="border-2 border-[#00B894] rounded-[4px] text-[#00B894] px-4 py-1 text-lg">
                   $9.99
                 </div>
-                <div className="text-[#909090] leading-[26px] py-2 mr-4 text-lg line-through">
+                <div className="text-[#909090] leading-[26px] py-2 mr-4 text-lg strikethrough">
                   $19.99
                 </div>
               </div>
@@ -109,7 +109,7 @@ export default function Home() {
             <p className="align-top">Comparing the American visa and green card in all aspects of life will help you decide which option suits you best.</p>
           </div>
           <div className="compare-table-slider-header flex items-center justify-center">
-            <div className="Green Card px-16 p-3 border border-[#F3F3F3] rounded-lg font-extrabold text-[18px] shadow-slate-200/50 shadow-xl">
+            <div className="Green Card px-16 p-3 border border-[#F3F3F3] rounded-lg font-extrabold text-[18px] custom-box-shadow">
               <span className="text-[#00B894]">Green</span> Card</div>
           </div>
           <table className="flex flex-col items-start p-0">
@@ -156,7 +156,7 @@ export default function Home() {
                   Study
                 </td>
                 <td className="flex flex-row items-center">
-                  Up to 80% cheaper
+                  <div>Up to <span className="text-[#00B894]">80% cheaper</span></div>
                 </td>
               </tr>
               <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-white">
@@ -197,6 +197,26 @@ export default function Home() {
               </tr>
             </tbody>
           </table>
+          <div className="slider-bottom flex flex-col items-center gap-8 justify-center align-middle">
+            <div className="custom-box-shadow border border-[#F3F3F3] px-12 rounded-[8px] items-center justify-center">
+              <div className="flex flex-col items-center gap-4 py-4">
+                <div className="flex flex-row py-1 px-4 items-center justify-normal bg-[#FFD166] rounded-[4px] align-middle">
+                  <div className="text-[#333333] text-[12px] leading-[18px]">Discount 50%</div>
+                </div>
+                <div className="gap-4 flex flex-row items-center justify-center -my-2">
+                  <div className="text-[#c2bbbb] opacity-75 font-bold leading-[36px] strikethrough">
+                    $19.99
+                  </div>
+                  <div className="text-[#00B894] font-extrabold text-[26px]">
+                    $9.99
+                  </div>
+                </div>
+                <button className="py-2 px-6 bg-[#00B894] text-white border border-[#00B894] rounded-[4px]">
+                  Apply now
+                </button>
+              </div>
+            </div>
+          </div>
 
           <div className="compare-table-table"></div>
           <div className="compare-table-slider-bottom"></div>

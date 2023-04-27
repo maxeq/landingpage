@@ -6,10 +6,16 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 14px;
   line-height: 26px;
+  color: #333333;
 }
 
 tr {
 height: 68px;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  text-decoration-color: #c2bbbb;
 }
 
 .logo-image {
@@ -114,4 +120,12 @@ li {
 .work {
   width: 35px;
   height: 26px;
+}
+
+.custom-box-shadow {
+  box-shadow:
+    0px 1.8568079471588135px 1.9473838806152344px 0px rgba(0, 0, 0, 0.0105),
+    0px 5.133836269378662px 5.384267330169678px 0px rgba(0, 0, 0, 0.015),
+    0px 12.360300064086914px 12.963241577148438px 0px rgba(0, 0, 0, 0.0195),
+    0px 41px 43px 0px rgba(0, 0, 0, 0.03);
 }
