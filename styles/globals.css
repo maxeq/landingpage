@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 26px;
   color: #333333;
 }
@@ -17,6 +17,7 @@ height: 68px;
   display: flex;
   align-items: stretch;
 }
+
 .sameblock {
   flex-grow: 1;
 }
