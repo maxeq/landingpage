@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 26px;
   color: #333333;
 }
@@ -12,6 +12,15 @@ body {
 tr {
 height: 68px;
 }
+
+.slider-bottom {
+  display: flex;
+  align-items: stretch;
+}
+.sameblock {
+  flex-grow: 1;
+}
+
 
 .strikethrough {
   text-decoration: line-through;
