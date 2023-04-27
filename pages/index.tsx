@@ -218,9 +218,6 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="compare-table-table"></div>
-          <div className="compare-table-slider-bottom"></div>
-
         </div>
       </div>
 
