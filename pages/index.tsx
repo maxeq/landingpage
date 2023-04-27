@@ -102,8 +102,8 @@ export default function Home() {
         </div>
         {/* // 1st block */}
         {/* Compare table */}
-        <div className="compare-table flex flex-col item-start py-8 gap-4">
-          <div className="compare-background opacity-50"></div>
+        <div className="compare-table flex flex-col item-start py-8 gap-4 compare-table-wrapper">
+          <div className="compare-background"></div>
           <div className="compare-table-title gap-1 px-4">
             <p className="text-[24px] font-extrabold"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
             <p className="align-top">Comparing the American visa and green card in all aspects of life will help you decide which option suits you best.</p>
