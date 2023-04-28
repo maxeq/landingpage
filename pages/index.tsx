@@ -1,10 +1,4 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import react from 'react'
 import SliderTemp from './components/sliders/sliderTemp'
-
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -63,7 +57,7 @@ export default function Home() {
             <div className='gap-4 item-start flex flex-col'>
               <h3 className="font-medium text-[14px] text-[#333333]">Check your eligibility to live, work and study in the <span className="text-united font-extrabold">United</span> <span className="text-states font-extrabold">States</span> today!</h3>
               <div className="flex-grow-0 flex font-bold leading-[26px]">
-                <button className="bg-[#00B894] text-white border rounded-[6px] px-6 py-2 mr-4">
+                <button className="bg-[#00B894] border border-[#00B894] text-white border rounded-[6px] px-6 py-2 mr-4">
                   Apply Now
                 </button>
                 <button className="border border-[#00B894] rounded-[6px] px-6 py-2">
@@ -73,7 +67,7 @@ export default function Home() {
               <p className="text-[12px] ">More than 25 combine years of experience.</p>
               <hr className="border-1 flex-grow-0 border-[#F3F3F3] my-0"></hr>
               <div className="font-bold">
-                <h4>Suitable for:</h4>
+                <h4 className="mb-1">Suitable for:</h4>
                 <ul className="list-none font-normal list-inside flex p-0 flex-row align-start gap-1 flex-grow-0 flex-none">
                   <ul>
                     <li className="flex gap-2">
