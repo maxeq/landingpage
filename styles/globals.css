@@ -13,6 +13,10 @@ tr {
 height: 68px;
 }
 
+.advantages-block{
+height: 1912px;
+}
+
 .slider-bottom {
   display: flex;
   align-items: stretch;

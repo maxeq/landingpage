@@ -140,9 +140,9 @@ export const SliderTemp = () => {
                         </tbody>
                     </table>
                     <div className="py-4">{renderDots(3)}</div>
-                    <div className="slider-bottom flex flex-row items-center gap-8 justify-between align-middle">
+                    <div className="slider-bottom flex flex-row items-center gap-6 justify-between align-middle">
                         <div className="sameblock flex border border-[#F3F3F3] border-l-0 rounded-[8px] rounded-tl-none rounded-bl-none custom-box-shadow"></div>
-                        <div className="sameblock custom-box-shadow border border-[#F3F3F3] px-12 rounded-[8px] items-center justify-center">
+                        <div className="sameblock custom-box-shadow border border-[#F3F3F3] px-6 rounded-[8px] items-center justify-center">
                             <div className="flex flex-col items-center gap-4 py-4">
                                 <div className="flex flex-row py-1 px-4 items-center justify-normal bg-[#FFD166] rounded-[4px] align-middle">
                                     <div className="text-[#333333] text-[12px] leading-[18px]">Discount 50%</div>
@@ -255,9 +255,9 @@ export const SliderTemp = () => {
                         </tbody>
                     </table>
                     <div className="py-4">{renderDots(3)}</div>
-                    <div className="slider-bottom flex flex-row items-center gap-8 justify-between align-middle">
+                    <div className="slider-bottom flex flex-row items-center gap-6 justify-between align-middle">
                         <div className="sameblock flex border border-[#F3F3F3] border-l-0 rounded-[8px] rounded-tl-none rounded-bl-none custom-box-shadow"></div>
-                        <div className="sameblock custom-box-shadow border border-[#F3F3F3] px-12 rounded-[8px] items-center justify-center">
+                        <div className="sameblock custom-box-shadow border border-[#F3F3F3] px-6 rounded-[8px] items-center justify-center">
                             <div className="flex flex-col items-center gap-4 py-4">
                                 <div className="flex flex-row py-1 px-4 items-center justify-normal bg-[#FFD166] rounded-[4px] align-middle">
                                     <div className="text-[#333333] text-[12px] leading-[18px]">Discount 50%</div>
@@ -371,9 +371,9 @@ export const SliderTemp = () => {
                         </tbody>
                     </table>
                     <div className="py-4">{renderDots(3)}</div>
-                    <div className="slider-bottom flex flex-row items-center gap-8 justify-between align-middle">
+                    <div className="slider-bottom flex flex-row items-center gap-6 justify-between align-middle mb-10">
                         <div className="sameblock flex border border-[#F3F3F3] border-l-0 rounded-[8px] rounded-tl-none rounded-bl-none custom-box-shadow"></div>
-                        <div className="sameblock custom-box-shadow border border-[#F3F3F3] px-12 rounded-[8px] items-center justify-center">
+                        <div className="sameblock custom-box-shadow border border-[#F3F3F3] px-6 rounded-[8px] items-center justify-center">
                             <div className="flex flex-col items-center gap-4 py-4">
                                 <div className="flex flex-row py-1 px-4 items-center justify-normal bg-[#FFD166] rounded-[4px] align-middle">
                                     <div className="text-[#333333] text-[12px] leading-[18px]">Discount 50%</div>
