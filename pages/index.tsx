@@ -166,20 +166,20 @@ export default function Home() {
         <hr className="border-1 flex-grow-0 mx-4 border-[#E9E9E9] my-0"></hr>
         <div className="advantages-list flex flex-col items-center mx-2">
           <div className="flex items-center flex-col mx-12 justify-center text-black pt-5">
-            <img src="img/adv/Vector-4.svg" alt="Navigation Bar" />
+            <img src="img/adv/Vector-5.svg" alt="Navigation Bar" />
             <p className="leading-7 align-middle text-[16px] text-center my-4">
-              The right to study at a US university<br />without risk and up to 80% cheaper than
-              without a Green Card
+              The possibility of<br />
+              federal loans for students
             </p>
           </div>
         </div>
         <hr className="border-1 flex-grow-0 mx-4 border-[#E9E9E9] my-0"></hr>
         <div className="advantages-list flex flex-col items-center mx-2">
           <div className="flex items-center flex-col mx-12 justify-center text-black pt-5">
-            <img src="img/adv/Vector-5.svg" alt="Navigation Bar" />
+            <img src="img/adv/Vector-4.svg" alt="Navigation Bar" />
             <p className="leading-7 align-middle text-[16px] text-center my-4">
-              The possibility of<br />
-              federal loans for students
+              The right to study at a US university<br />without risk and up to 80% cheaper than
+              without a Green Card
             </p>
           </div>
         </div>
