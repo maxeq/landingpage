@@ -41,7 +41,7 @@ export default function Home() {
           </div>
           {/* h1 with desc */}
           <div className="cheapest-solutions mt-9 border bg-white z-2 flex flex-grow-0 flex-col rounded-lg p-4">
-            <h2 className="font-extrabold font-[#333333] flex-grow-0 leading-[26px] text-[18px]">The cheapest immigration Solution</h2>
+            <h2 className="font-extrabold font-[#333333] flex-grow-0 leading-[26px] text-[18px] text-black">The cheapest immigration Solution</h2>
             <div className="flex font-extrabold items-center justify-start my-2">
               <div className="gap-4 flex items-center mb-1">
                 <div className="border-2 border-[#00B894] rounded-[4px] text-[#00B894] px-4 py-1 text-lg">
@@ -67,7 +67,7 @@ export default function Home() {
               <p className="text-[12px] ">More than 25 combine years of experience.</p>
               <hr className="border-1 flex-grow-0 border-[#F3F3F3] my-0"></hr>
               <div className="font-bold">
-                <h4 className="mb-1">Suitable for:</h4>
+                <h4 className="mb-1 text-black">Suitable for:</h4>
                 <ul className="list-none font-normal list-inside flex p-0 flex-row align-start gap-1 flex-grow-0 flex-none">
                   <ul>
                     <li className="flex gap-2">
@@ -100,7 +100,7 @@ export default function Home() {
           <div className="compare-background"></div>
           <div className="compare-table-title gap-1 px-4">
             <p className="text-[24px] font-extrabold"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
-            <p className="align-top py-3">Comparing the American visa and green card in all aspects of life will help you decide which option suits you best.</p>
+            <p className="align-top py-3 ">Comparing the American visa and green card in all aspects of life will help you decide which option suits you best.</p>
           </div>
         </div>
         {/* Compare table */}
