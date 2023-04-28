@@ -14,8 +14,39 @@ height: 68px;
 }
 
 .advantages-block{
-height: 1912px;
+height: 1940px;
 }
+
+.faq-block {
+  position: relative;
+  height: 892px;
+  width: 100%;
+}
+
+.pin-image {
+  position: absolute;
+  right: 20px; /* Set the distance from the right edge */
+  top: -35px;   /* Set the distance from the top edge */
+  z-index: 10; /* Set the z-index higher than other elements to ensure it stays on top */
+}
+
+
+.faq-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/img/compare-table.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5; /* Set the desired opacity here */
+  z-index: -1; /* Send the background to the back, behind the content */
+}
+
+
 
 .slider-bottom {
   display: flex;
