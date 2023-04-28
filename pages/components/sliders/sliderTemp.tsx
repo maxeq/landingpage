@@ -3,7 +3,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useState } from 'react';
 
-export const SliderTemp = () => {
+const SliderTemp = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const settings = {
         afterChange: (current: number) => setCurrentSlide(current),
@@ -396,3 +396,5 @@ export const SliderTemp = () => {
         </div>
     );
 }
+
+export default SliderTemp;

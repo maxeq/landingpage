@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import react from 'react'
-import { SliderTemp } from './components/sliders/sliderTemp'
+import SliderTemp from './components/sliders/sliderTemp'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -224,7 +224,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="bg-white flex flex-col items-center p-3 gap-4 my-4 mx-4 rounded-lg justify-center">
+        <div className="bg-white flex flex-col items-center p-3 gap-4 py-4 my-4 mx-4 rounded-lg justify-center">
           <p className="items-center justify-center flex">Learn more about the green card by watching the video about the benefits and comparison of the green card with a US visa.</p>
           <img src="img/adv/video.svg" alt="Navigation Bar" />
         </div>
