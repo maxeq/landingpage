@@ -270,7 +270,6 @@ export default function Home() {
         <img src="img/adv/pin.svg" alt="Navigation Bar" className="pin-image" />
         <hr className="border-1 flex-grow-0 border-[#F3F3F3] my-0"></hr>
         <div className="my-[32px]">
-
           {faqs.map((faq) => (
             <FAQ
               key={faq.id}
@@ -281,10 +280,37 @@ export default function Home() {
               setActiveId={setActiveId}
             />
           ))}
-
         </div>
       </div>
-
+      <div className="form-block py-8 px-4 flex flex-col">
+        <div className="font-extrabold text-[24px] leading-9 text-[#333333]"><span className="text-[#00B894]">Have any questions</span> or
+          looking for the best US Visa consulting?</div>
+        <div className="py-4">With more than 25 combine years of experience we are your best immigration solution.</div>
+        <form className="space-y-4 pb-4">
+          <div className="flex flex-col">
+            <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
+            <input type="text" placeholder="Full Name" id="name" name="name" className="border placeholder-[#C8C8C8] border-[#E9E9E9] rounded-[4px] py-2 px-4 text-[#C8C8C8] focus:ring-green-400 focus:border-[#00B894] outline-none" />
+          </div>
+          <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
+          <div className="flex flex-col">
+            <input type="email" id="email" placeholder="E-mail" name="email" className="border placeholder-[#C8C8C8] border-[#E9E9E9] rounded-[4px] p-2 px-4 focus:ring-green-400 focus:border-[#00B894] outline-none" />
+          </div>
+          <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
+          <div className="flex flex-col">
+            <input type="tel" id="phone" placeholder="Phone number" name="phone" className="border border-[#E9E9E9] rounded-[4px] p-2 px-4  placeholder-[#C8C8C8] focus:ring-green-400 focus:border-[#00B894] outline-none" />
+          </div>
+          <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
+          <div className="flex flex-col">
+            <input type="question" id="phone" placeholder="Type your question here and expect a call from us" name="phone" className="border border-[#E9E9E9] rounded-[4px] p-2 px-4  placeholder-[#C8C8C8] focus:ring-green-400 focus:border-[#00B894] outline-none" />
+          </div>
+        </form>
+        <div className="flex flex-col">
+          <button className="bg-[#00B894] text-white rounded-[4px] py-2 px-4 font-bold">Contact us</button>
+        </div>
+        <div className="text-[#909090] text-[12px] leading-[18px] mt-4">
+          By clicking the "check my eligibility " button you agree to our <a className="text-[#00B894] font-bold" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/terms-and-conditions/">Terms and Conditions</a> and acknowledge that your information will be handled as detailed in our <a className="text-[#00B894] font-bold" target="_blank" rel="noopener noreferrer" href=" https://dvimmigration.org/privacy-policy/">Privacy Policy</a> You acknowledge that in order to continue the process our representative will contact you.
+        </div>
+      </div>
     </main >
 
   )

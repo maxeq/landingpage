@@ -25,7 +25,7 @@ const FAQ = ({ id, activeId, question, answer, setActiveId }: FAQProps) => {
         <IconWrapper>{isOpen ? <HiOutlineChevronUp className="text-[#00B894]" /> : <HiOutlineChevronDown className='text-[#C8C8C8]' />}</IconWrapper>
       </Header>
       {isOpen && <hr className="border-[#F3F3F3] my-2" />}
-      <Answer open={isOpen}>{answer}</Answer>
+      <Answer className="mr-5" open={isOpen}>{answer}</Answer>
     </FAQContainer >
   );
 };
