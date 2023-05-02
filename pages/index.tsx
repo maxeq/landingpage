@@ -1,6 +1,46 @@
 import SliderTemp from './components/sliders/sliderTemp'
+import FAQ from './components/faq';
+import { useState } from 'react';
 
 export default function Home() {
+  const [activeId, setActiveId] = useState<number | null>(null);
+  const faqs = [
+    {
+      id: 1,
+      question: 'What is the Green Card Lottery?',
+      answer: 'The Green Card Lottery, also known as the Diversity Immigrant Visa Program, is an incredible opportunity for individuals from eligible countries to win a U.S. visa and gain permanent residency in the United States.',
+    },
+    {
+      id: 2,
+      question: 'How do I apply for the Green Card Lottery?',
+      answer: 'To apply for the Green Card Lottery, you must submit a free online application during the designated registration period. Our team of experts can help guide you through the application process and ensure that your application is accurate and complete.',
+    },
+    {
+      id: 3,
+      question: 'What are the eligibility requirements for the Green Card Lottery?',
+      answer: 'To be eligible for the Green Card Lottery, you must be from a country that is eligible for the program, have a high school education or equivalent, or at least two years of work experience in an occupation that requires at least two years of training or experience.',
+    },
+    {
+      id: 4,
+      question: 'How many visas are available through the Green Card Lottery?',
+      answer: 'The Green Card Lottery provides a limited number of visas each year, typically around 50,000. However, with our expert guidance and support, you can increase your chances of being selected as a winner.',
+    },
+    {
+      id: 5,
+      question: 'How long does it take to find out if I have been selected in the Green Card Lottery?',
+      answer: 'Winners of the Green Card Lottery are typically notified by email in the spring of the year following the registration period. With our advanced technology and up-to-date knowledge, we can keep you informed and help you respond to any requests for additional information or documentation.',
+    },
+    {
+      id: 6,
+      question: 'Can I increase my chances of winning the Green Card Lottery?',
+      answer: 'While there is no guaranteed way to increase your chances of winning the Green Card Lottery, our team of experts can help ensure that your application is complete and accurate, and that you meet all of the eligibility requirements. We can also provide tips and strategies to maximize your chances of being selected as a winner.',
+    },
+    {
+      id: 7,
+      question: 'If I win the Green Card Lottery, do I have to move to the United States immediately?',
+      answer: 'No, winners of the Green Card Lottery have up to six months to apply for and receive their visa, and up to six months after that to move to the United States. Our team can provide support and guidance throughout the entire process, ensuring a smooth transition and helping you start your new life in the United States.',
+    },
+  ];
   return (
     <main>
       <header className="relative md:h-[1440px]">
@@ -229,7 +269,22 @@ export default function Home() {
         </div>
         <img src="img/adv/pin.svg" alt="Navigation Bar" className="pin-image" />
         <hr className="border-1 flex-grow-0 border-[#F3F3F3] my-0"></hr>
+        <div className="my-[32px]">
+
+          {faqs.map((faq) => (
+            <FAQ
+              key={faq.id}
+              id={faq.id}
+              activeId={activeId}
+              question={faq.question}
+              answer={faq.answer}
+              setActiveId={setActiveId}
+            />
+          ))}
+
+        </div>
       </div>
+
     </main >
 
   )
