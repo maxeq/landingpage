@@ -153,7 +153,7 @@ const SliderTemp = () => {
                                     </div>
                                     <div className="text-[#00B894] font-extrabold text-[26px]">$29.99</div>
                                 </div>
-                                <button className="py-2 px-6 bg-[#00B894] text-white border border-[#00B894] rounded-[4px]">
+                                <button className="py-2 px-6 hover:bg-[#00B894]/80 active:bg-[#00B894]/50 bg-[#00B894] text-white border border-[#00B894] rounded-[4px]">
                                     Apply now
                                 </button>
                             </div>
@@ -268,7 +268,7 @@ const SliderTemp = () => {
                                     </div>
                                     <div className="text-[#00B894] font-extrabold text-[26px]">$9.99</div>
                                 </div>
-                                <button className="py-2 px-6 bg-[#00B894] text-white border border-[#00B894] rounded-[4px]">
+                                <button className="py-2 px-6 hover:bg-[#00B894]/80 active:bg-[#00B894]/50 bg-[#00B894] text-white border border-[#00B894] rounded-[4px]">
                                     Apply now
                                 </button>
                             </div>
@@ -384,7 +384,7 @@ const SliderTemp = () => {
                                     </div>
                                     <div className="text-[#00B894] font-extrabold text-[26px]">$199.99</div>
                                 </div>
-                                <button className="py-2 px-6 bg-[#00B894] text-white border border-[#00B894] rounded-[4px]">
+                                <button className="py-2 px-6 hover:bg-[#00B894]/80 active:bg-[#00B894]/50 bg-[#00B894] text-white border border-[#00B894] rounded-[4px]">
                                     Apply now
                                 </button>
                             </div>

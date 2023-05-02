@@ -97,10 +97,10 @@ export default function Home() {
             <div className='gap-4 item-start flex flex-col'>
               <h3 className="font-medium text-[14px] text-[#333333]">Check your eligibility to live, work and study in the <span className="text-united font-extrabold">United</span> <span className="text-states font-extrabold">States</span> today!</h3>
               <div className="flex-grow-0 flex font-bold leading-[26px]">
-                <button className="bg-[#00B894] border border-[#00B894] text-white border rounded-[6px] px-6 py-2 mr-4">
+                <button className="bg-[#00B894] hover:bg-[#00B894]/80 active:bg-[#00B894]/50 border border-[#00B894] text-white border rounded-[6px] px-6 py-2 mr-4">
                   Apply Now
                 </button>
-                <button className="border border-[#00B894] rounded-[6px] px-6 py-2">
+                <button className="border hover:border-[#00B894]/80 active:border-[#00B894]/50 border-[#00B894] rounded-[6px] px-6 py-2 hover:text-black">
                   More options
                 </button>
               </div>
@@ -269,7 +269,7 @@ export default function Home() {
         </div>
         <img src="img/adv/pin.svg" alt="Navigation Bar" className="pin-image" />
         <hr className="border-1 flex-grow-0 border-[#F3F3F3] my-0"></hr>
-        <div className="my-[32px]">
+        <div className="mt-[32px]">
           {faqs.map((faq) => (
             <FAQ
               key={faq.id}
@@ -305,10 +305,10 @@ export default function Home() {
           </div>
         </form>
         <div className="flex flex-col">
-          <button className="bg-[#00B894] text-white rounded-[4px] py-2 px-4 font-bold">Contact us</button>
+          <button className="bg-[#00B894] text-white rounded-[4px] py-2 px-4 font-bold hover:bg-[#00B894]/80 active:bg-[#00B894]/50">Contact us</button>
         </div>
         <div className="text-[#909090] text-[12px] leading-[18px] mt-4">
-          By clicking the "check my eligibility " button you agree to our <a className="text-[#00B894] font-bold" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/terms-and-conditions/">Terms and Conditions</a> and acknowledge that your information will be handled as detailed in our <a className="text-[#00B894] font-bold" target="_blank" rel="noopener noreferrer" href=" https://dvimmigration.org/privacy-policy/">Privacy Policy</a> You acknowledge that in order to continue the process our representative will contact you.
+          By clicking the "contact us" button you agree to our <a className="text-[#00B894] font-bold" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/terms-and-conditions/">Terms and Conditions</a> and acknowledge that your information will be handled as detailed in our <a className="text-[#00B894] font-bold" target="_blank" rel="noopener noreferrer" href=" https://dvimmigration.org/privacy-policy/">Privacy Policy</a> You acknowledge that in order to continue the process our representative will contact you.
         </div>
       </div>
     </main >

@@ -13,6 +13,10 @@ tr {
 height: 68px;
 }
 
+tr:hover {
+  background-color: rgba(207, 207, 207, 0.5);
+}
+
 .form-block {
   height: 576px;
   background-color: #F4F5F9;
@@ -26,7 +30,6 @@ height: 1940px;
 
 .faq-block {
   position: relative;
-  height: 892px;
   width: 100%;
 }
 
