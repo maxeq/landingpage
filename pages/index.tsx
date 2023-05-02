@@ -301,7 +301,7 @@ export default function Home() {
           </div>
           <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
           <div className="flex flex-col">
-            <input type="question" id="phone" placeholder="Type your question here and expect a call from us" name="phone" className="border border-[#E9E9E9] rounded-[4px] p-2 px-4  placeholder-[#C8C8C8] focus:ring-green-400 focus:border-[#00B894] outline-none" />
+            <input type="question" id="phone" placeholder="Type your question here and expect our call" name="phone" className="border border-[#E9E9E9] rounded-[4px] p-2 px-4  placeholder-[#C8C8C8] focus:ring-green-400 focus:border-[#00B894] outline-none" />
           </div>
         </form>
         <div className="flex flex-col">
