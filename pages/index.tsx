@@ -316,7 +316,7 @@ export default function Home() {
       {/* footer */}
       <div className="footer-block py-8 flex px-4 flex-col">
         <div className='justify-center flex'>
-          <img src="img/adv/DV-logo2.svg" alt="Brand Logo" className="max-w-[110px] justify-center" />
+          <img src="img/DV-logo2.png" alt="Brand Logo" className="max-w-[110px] justify-center" />
         </div>
         <div className="text-white">
           <div className="font text-[18px] py-4">Contacts</div>
