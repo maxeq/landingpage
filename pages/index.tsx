@@ -2,6 +2,7 @@ import SliderTemp from './components/sliders/sliderTemp'
 import FAQ from './components/faq';
 import { useState } from 'react';
 
+
 export default function Home() {
   const [activeId, setActiveId] = useState<number | null>(null);
   const faqs = [
@@ -139,7 +140,7 @@ export default function Home() {
         <div className="compare-table flex flex-col item-start pt-8 gap-4 compare-table-wrapper">
           <div className="compare-background"></div>
           <div className="compare-table-title gap-1 px-4">
-            <p className="text-[24px] font-extrabold"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
+            <p className="text-[24px] font-extrabold text-black"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
             <p className="align-top py-3 ">Comparing the American visa and green card in all aspects of life will help you decide which option suits you best.</p>
           </div>
         </div>
@@ -149,7 +150,7 @@ export default function Home() {
       {/* discover more about green card advantages */}
       <div className="advantages-block bg-[#F4F5F9] py-[32px]">
         <div className="flex flex-col items-center self-stretch mx-4">
-          <h4 className="text-[24px] leading-[36px] font-extrabold">Discover more about <span className="text-[#00B894]">Green Card</span> advantages</h4>
+          <h4 className="text-[24px] leading-[36px] font-extrabold text-black">Discover more about <span className="text-[#00B894]">Green Card</span> advantages</h4>
           <p className="text-[#595959] pt-1">Owning a US Green Card gives its holder nearly all rights equal of a US citizen.</p>
         </div>
         <div className="advantages-list flex flex-col items-center gap-4 mx-2">
@@ -308,8 +309,8 @@ export default function Home() {
         <div className="flex flex-col">
           <button className="bg-[#00B894] text-white rounded-[4px] py-2 px-4 font-bold hover:bg-[#00B894]/80 active:bg-[#00B894]/50">Contact us</button>
         </div>
-        <div className="text-[#909090] text-[12px] leading-[18px] mt-4">
-          By clicking the "contact us" button you agree to our <a className="text-[#00B894] font-bold" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/terms-and-conditions/">Terms and Conditions</a> and acknowledge that your information will be handled as detailed in our <a className="text-[#00B894] font-bold" target="_blank" rel="noopener noreferrer" href=" https://dvimmigration.org/privacy-policy/">Privacy Policy</a> You acknowledge that in order to continue the process our representative will contact you.
+        <div className="text-[#909090] text-[12px] leading-[18px] mt-4  font-[200]">
+          By clicking the "contact us" button you agree to our <a className="text-[#00B894] font-normal" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/terms-and-conditions/">Terms and Conditions</a> and acknowledge that your information will be handled as detailed in our <a className="text-[#00B894] font-normal" target="_blank" rel="noopener noreferrer" href=" https://dvimmigration.org/privacy-policy/">Privacy Policy</a> You acknowledge that in order to continue the process our representative will contact you.
         </div>
       </div>
       {/* footer */}
@@ -318,29 +319,29 @@ export default function Home() {
           <img src="img/adv/DV-logo2.svg" alt="Brand Logo" className="max-w-[110px] justify-center" />
         </div>
         <div className="text-white">
-          <div className="font-semibold text-[18px] py-4">Contacts</div>
+          <div className="font text-[18px] py-4">Contacts</div>
           <div className="space-y-2">
             <div className="flex gap-6 items-start">
-              <div className="flex"><img src="img/adv/Vector-12.svg" alt="Call" className="mr-2" />Call:</div>
+              <div className="flex font-[200]"><img src="img/adv/Vector-12.svg" alt="Call" className="mr-2 font-[200]" />Call:</div>
               <div>+13473913730</div>
             </div>
             <div className="flex gap-6 items-start">
-              <div className="flex"><img src="img/adv/Vector-13.svg" alt="Call" className="mr-2" />E-Mail:</div>
+              <div className="flex font-[200]"><img src="img/adv/Vector-13.svg" alt="Call" className="mr-2 font-[200]" />E-Mail:</div>
               <div>support@dvimmigration.org</div>
             </div>
             <div className="flex gap-6 items-start">
-              <div className="flex"><img src="img/adv/Vector-14.svg" alt="Address" className="mr-2" />Address:</div>
+              <div className="flex font-[200]"><img src="img/adv/Vector-14.svg" alt="Address" className="mr-2 font-[200]" />Address:</div>
               <div>Katalanou, 1, 1st floor, office 101, Aglantzia, 2121, Nicosia, Cyprus</div>
             </div>
           </div>
           <div className="py-4"><hr className="border-[#FFFFFF1A]"></hr></div>
           <div>
-            <div className="font-semibold text-[18px] pb-4">More</div>
+            <div className="text-[18px] pb-4">More</div>
             <div className="flex flex-col gap-2">
-              <a className="underline leading-[22px]" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/privacy-policy/">
+              <a className=" font-[200] underline leading-[22px]" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/privacy-policy/">
                 Privacy Policy
               </a>
-              <a className="underline leading-[22px]" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/terms-and-conditions/">
+              <a className=" font-[200] underline leading-[22px]" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/terms-and-conditions/">
                 Terms and Conditions
               </a>
               <div className="flex gap-8 mt-8">
@@ -349,10 +350,10 @@ export default function Home() {
               </div>
             </div>
             <div className="py-4"><hr className="border-[#FFFFFF1A]"></hr></div>
-            <div className="text-[12px] font-extralight justify-center flex">We are not affiliated with the US government or embassy</div>
+            <div className="text-[12px] font-[200] justify-center flex">We are not affiliated with the US government or embassy</div>
             <div className="flex items-center justify-center text-[12px] ">
               <img src="img/c.svg" alt="Address" className="mr-1 flex justify-center align-middle items-center" />
-              <div className="text-[12px] font-nunito-sans font-ultralight justify-center flex">DV Immigration, 2023</div>
+              <div className="text-[12px] font-nunito-sans font-ultralight justify-center flex font-[200]">DV Immigration, 2023</div>
             </div>
           </div>
         </div>
