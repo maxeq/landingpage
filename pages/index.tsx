@@ -1,6 +1,7 @@
 import SliderTemp from './components/sliders/sliderTemp'
 import FAQ from './components/faq';
 import { useState } from 'react';
+import Popup from './components/popup';
 
 
 export default function Home() {
@@ -358,6 +359,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Popup />
     </main >
 
   )

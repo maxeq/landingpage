@@ -180,6 +180,40 @@ li {
   height: 26px;
 }
 
+.popup {
+  background: #F4F5F9;
+}
+
+.sticky-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100; /* Adjust this value according to your project's z-index requirements */
+}
+
+/* Add this to your CSS file */
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.drop-shadow {
+
+  box-shadow: 0px 0.11069025844335556px 2.2138051986694336px 0px #00000005,
+  0px 0.2660040855407715px 5.32008171081543px 0px #00000007,
+0px 0.5008620619773865px 10.017241477966309px 0px #00000009,
+0px 0.8934523463249207px 17.869047164916992px 0px #0000000B,
+ 0px 1.6711044311523438px 33.422088623046875px 0px #0000000D,
+0px 4px 80px 0px #00000012;
+
+}
+
 .custom-box-shadow {
   box-shadow:
     0px 1.8568079471588135px 1.9473838806152344px 0px rgba(0, 0, 0, 0.0105),
