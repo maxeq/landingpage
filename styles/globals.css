@@ -17,10 +17,14 @@ tr:hover {
   background-color: rgba(207, 207, 207, 0.5);
 }
 
-.form-block {
+.footer-block {
+  background-color: #333333;
+  width: 100%;
+}
 
+.form-block {
   background-color: #F4F5F9;
-  position:absolute;
+  position:relative;
   width: 100%;
 }
 

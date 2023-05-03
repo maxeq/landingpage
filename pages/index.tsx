@@ -282,6 +282,7 @@ export default function Home() {
           ))}
         </div>
       </div>
+      {/* form */}
       <div className="form-block py-8 px-4 flex flex-col">
         <div className="font-extrabold text-[24px] leading-9 text-[#333333]"><span className="text-[#00B894]">Have any questions</span> or
           looking for the best US Visa consulting?</div>
@@ -309,6 +310,51 @@ export default function Home() {
         </div>
         <div className="text-[#909090] text-[12px] leading-[18px] mt-4">
           By clicking the "contact us" button you agree to our <a className="text-[#00B894] font-bold" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/terms-and-conditions/">Terms and Conditions</a> and acknowledge that your information will be handled as detailed in our <a className="text-[#00B894] font-bold" target="_blank" rel="noopener noreferrer" href=" https://dvimmigration.org/privacy-policy/">Privacy Policy</a> You acknowledge that in order to continue the process our representative will contact you.
+        </div>
+      </div>
+      {/* footer */}
+      <div className="footer-block py-8 flex px-4 flex-col">
+        <div className='justify-center flex'>
+          <img src="img/adv/DV-logo2.svg" alt="Brand Logo" className="max-w-[110px] justify-center" />
+        </div>
+        <div className="text-white">
+          <div className="font-semibold text-[18px] py-4">Contacts</div>
+          <div className="space-y-2">
+            <div className="flex gap-6 items-start">
+              <div className="flex"><img src="img/adv/Vector-12.svg" alt="Call" className="mr-2" />Call:</div>
+              <div>+13473913730</div>
+            </div>
+            <div className="flex gap-6 items-start">
+              <div className="flex"><img src="img/adv/Vector-13.svg" alt="Call" className="mr-2" />E-Mail:</div>
+              <div>support@dvimmigration.org</div>
+            </div>
+            <div className="flex gap-6 items-start">
+              <div className="flex"><img src="img/adv/Vector-14.svg" alt="Address" className="mr-2" />Address:</div>
+              <div>Katalanou, 1, 1st floor, office 101, Aglantzia, 2121, Nicosia, Cyprus</div>
+            </div>
+          </div>
+          <div className="py-4"><hr className="border-[#FFFFFF1A]"></hr></div>
+          <div>
+            <div className="font-semibold text-[18px] pb-4">More</div>
+            <div className="flex flex-col gap-2">
+              <a className="underline leading-[22px]" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/privacy-policy/">
+                Privacy Policy
+              </a>
+              <a className="underline leading-[22px]" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/terms-and-conditions/">
+                Terms and Conditions
+              </a>
+              <div className="flex gap-8 mt-8">
+                <img src="img/adv/Vector-15.svg" alt="Address" className="mr-2" />
+                <img src="img/visa.svg" alt="Address" className="mr-2" />
+              </div>
+            </div>
+            <div className="py-4"><hr className="border-[#FFFFFF1A]"></hr></div>
+            <div className="text-[12px] font-extralight justify-center flex">We are not affiliated with the US government or embassy</div>
+            <div className="flex items-center justify-center text-[12px] ">
+              <img src="img/c.svg" alt="Address" className="mr-1 flex justify-center align-middle items-center" />
+              <div className="text-[12px] font-nunito-sans font-ultralight justify-center flex">DV Immigration, 2023</div>
+            </div>
+          </div>
         </div>
       </div>
     </main >
