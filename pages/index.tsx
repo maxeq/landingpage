@@ -302,7 +302,7 @@ export default function Home() {
       </div>
       {/* form */}
       <div className="form-block py-8 px-4 flex flex-col">
-        <div className="font-extrabold text-[24px] leading-9 text-[#333333]"><span className="text-[#00B894]">Have any questions</span> or
+        <div className="font-extrabold text-[24px] leading-9 text-[#333333]"><span className="text-[#00B894]"><a href="#faq">Have any question</a></span> or
           looking for the best US Visa consulting?</div>
         <div className="py-4">With more than 25 combine years of experience we are your best immigration solution.</div>
         <form className="space-y-4 pb-4">

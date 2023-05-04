@@ -5,6 +5,7 @@ interface MobHeaderProps {
 }
 
 const MobHeader: FunctionComponent<PropsWithChildren<MobHeaderProps>> = ({ onClose }) => {
+
     return (
         <>
             <nav className="mobile-nav shadow-box-header flex justify-between py-2 md:hidden px-4 h-16">
@@ -19,14 +20,13 @@ const MobHeader: FunctionComponent<PropsWithChildren<MobHeaderProps>> = ({ onClo
             </nav>
             <div className="mobile-background"></div>
             <div className="mobbackground text-[#333333]">
-                <div className="py-8 px-4 space-y-4">
-                    <div className="font-bold text-[16px] leading-[28px]"><span className="text-[#0A3161]">U</span><span className="text-[##B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</div>
-                    <div className="font-bold text-[16px] leading-[28px]">About <span className="text-[#00B894]">Green</span> Card</div>
-                    <div className="font-bold text-[16px] leading-[28px]">About DV Immigration</div>
-                    <div className="font-bold text-[16px] leading-[28px]">FAQ</div>
-                    <div className="font-normal text-[14px] leading-[28px]">Privacy Policy</div>
-                    <div className="font-normal text-[14px] leading-[28px]">Terms and Conditions</div>
-                    <button className="text-white rounded-[4px] px-6 py-2 bg-[#00B894] border border-[#00B894]">Contact us</button>
+                <div className="py-8 px-4 space-y-4 flex-col flex">
+                    <div id="visevsgc" className="font-bold text-[16px] leading-[28px]"><span className="text-[#0A3161]">U</span><span className="text-[##B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</div>
+                    <div id="about" className="font-bold text-[16px] leading-[28px]">About <span className="text-[#00B894]">Green</span> Card</div>
+                    <div id="faq" className="font-bold text-[16px] leading-[28px]">FAQ</div>
+                    <a className="font-normal text-[14px] leading-[28px]" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/privacy-policy/">Privacy Policy</a>
+                    <a className="font-normal text-[14px] leading-[28px]" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/terms-and-conditions/">Terms and Conditions</a>
+                    <button id="contact" className="text-white rounded-[4px] w-32 px-6 py-2 bg-[#00B894] border border-[#00B894]">Contact us</button>
                 </div>
                 <div className="footer-block py-8 flex px-4 flex-col">
                     <div className="text-white">
