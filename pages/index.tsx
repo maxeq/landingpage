@@ -1,12 +1,14 @@
 import SliderTemp from './components/sliders/sliderTemp'
 import FAQ from './components/faq';
-import { useState } from 'react';
 import Popup from './components/popup';
 import MobHeader from './components/mobheader';
+import React, { useState, useRef } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 export default function Home() {
 
   const [isMobHeaderVisible, setIsMobHeaderVisible] = useState(false);
+  const staticFAQRef = useRef(null);
 
   const toggleMobHeader = () => {
     setIsMobHeaderVisible(!isMobHeaderVisible);
@@ -54,7 +56,7 @@ export default function Home() {
     <main>
       <header className="relative md:h-[1440px]">
         {isMobHeaderVisible ? (
-          <MobHeader onClose={toggleMobHeader} />
+          <MobHeader onClose={toggleMobHeader} refs={{ faq: staticFAQRef }} />
         ) : (
           <nav className="mobile-nav flex justify-between py-2 md:hidden px-4 h-16">
             <img src="img/logo.png" alt="Brand Logo" className="logo-image" />
@@ -103,10 +105,10 @@ export default function Home() {
             <div className="flex font-extrabold items-center justify-start my-2">
               <div className="gap-4 flex items-center mb-1">
                 <div className="border-2 border-[#00B894] rounded-[4px] text-[#00B894] px-4 py-1 text-lg">
-                  $9.99
+                  $29.99
                 </div>
                 <div className="text-[#909090] leading-[26px] py-2 mr-4 text-lg strikethrough">
-                  $19.99
+                  $199.99
                 </div>
               </div>
             </div>
@@ -116,11 +118,14 @@ export default function Home() {
               <h3 className="font-medium text-[14px] text-[#333333]">Check your eligibility to live, work and study in the <span className="text-united font-extrabold">United</span> <span className="text-states font-extrabold">States</span> today!</h3>
               <div className="flex-grow-0 flex font-bold leading-[26px]">
                 <button className="bg-[#00B894] hover:bg-[#00B894]/80 active:bg-[#00B894]/50 border border-[#00B894] text-white border rounded-[6px] px-6 py-2 mr-4">
-                  Apply Now
+                  <a href="https://dvimmigration.org/services/apply-now/" target="_blank" rel="noopener noreferrer">Apply Now</a>
                 </button>
-                <button className="border hover:border-[#00B894]/80 active:border-[#00B894]/50 border-[#00B894] rounded-[6px] px-6 py-2 hover:text-black">
+                <Link to="visevsgc"
+                  smooth={true}
+                  duration={500}
+                  className="border hover:border-[#00B894]/80 active:border-[#00B894]/50 border-[#00B894] rounded-[6px] px-6 py-2 hover:text-black">
                   More options
-                </button>
+                </Link>
               </div>
               <p className="text-[12px] ">More than 25 combine years of experience.</p>
               <hr className="border-1 flex-grow-0 border-[#F3F3F3] my-0"></hr>
@@ -157,7 +162,7 @@ export default function Home() {
         <div className="compare-table flex flex-col item-start pt-8 gap-4 compare-table-wrapper">
           <div className="compare-background"></div>
           <div className="compare-table-title gap-1 px-4">
-            <p className="text-[24px] font-extrabold text-black"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
+            <p id="visevsgc" className="text-[24px] font-extrabold text-black"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
             <p className="align-top py-3 ">Comparing the American visa and green card in all aspects of life will help you decide which option suits you best.</p>
           </div>
         </div>
@@ -167,7 +172,7 @@ export default function Home() {
       {/* discover more about green card advantages */}
       <div className="advantages-block bg-[#F4F5F9] py-[32px]">
         <div className="flex flex-col items-center self-stretch mx-4">
-          <h4 className="text-[24px] leading-[36px] font-extrabold text-black">Discover more about <span className="text-[#00B894]">Green Card</span> advantages</h4>
+          <h4 id="about" className="text-[24px] leading-[36px] font-extrabold text-black">Discover more about <span className="text-[#00B894]">Green Card</span> advantages</h4>
           <p className="text-[#595959] pt-1">Owning a US Green Card gives its holder nearly all rights equal of a US citizen.</p>
         </div>
         <div className="advantages-list flex flex-col items-center gap-4 mx-2">
@@ -302,8 +307,14 @@ export default function Home() {
       </div>
       {/* form */}
       <div className="form-block py-8 px-4 flex flex-col">
-        <div className="font-extrabold text-[24px] leading-9 text-[#333333]"><span className="text-[#00B894]"><a href="#faq">Have any question</a></span> or
-          looking for the best US Visa consulting?</div>
+        <div
+          className="font-extrabold text-[24px] leading-9 text-[#333333]"
+        >
+          <span id="faq" className="text-[#00B894]">
+            Have any question
+          </span>{" "}
+          or looking for the best US Visa consulting?
+        </div>
         <div className="py-4">With more than 25 combine years of experience we are your best immigration solution.</div>
         <form className="space-y-4 pb-4">
           <div className="flex flex-col">
@@ -336,7 +347,7 @@ export default function Home() {
           <img src="img/DV-logo2.png" alt="Brand Logo" className="max-w-[110px] justify-center" />
         </div>
         <div className="text-white">
-          <div className="font text-[18px] py-4">Contacts</div>
+          <div id="contacts" className="font text-[18px] py-4">Contacts</div>
           <div className="space-y-2">
             <div className="flex gap-6 items-start">
               <div className="flex font-[200]"><img src="img/adv/Vector-12.svg" alt="Call" className="mr-2 font-[200]" />Call:</div>

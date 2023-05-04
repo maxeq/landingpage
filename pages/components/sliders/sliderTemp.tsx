@@ -144,17 +144,11 @@ const SliderTemp = () => {
                         <div className="sameblock flex border border-[#F3F3F3] border-l-0 rounded-[8px] rounded-tl-none rounded-bl-none custom-box-shadow"></div>
                         <div className="sameblock custom-box-shadow border border-[#F3F3F3] px-6 rounded-[8px] items-center justify-center">
                             <div className="flex flex-col items-center gap-4 py-4">
-                                <div className="flex flex-row py-1 px-4 items-center justify-normal bg-[#FFD166] rounded-[4px] align-middle">
-                                    <div className="text-[#333333] text-[12px] leading-[18px]">Discount 50%</div>
-                                </div>
-                                <div className="gap-4 flex flex-row items-center justify-center -my-2">
-                                    <div className="text-[#c2bbbb] opacity-75 font-bold leading-[36px] strikethrough">
-                                        $19.99
-                                    </div>
-                                    <div className="text-[#00B894] font-extrabold text-[26px]">$29.99</div>
+                                <div className="gap-4 flex flex-row items-center justify-center my-[18px]">
+                                    <div className="text-[#333333] font-extrabold text-[35px]">$199.99</div>
                                 </div>
                                 <button className="py-2 px-6 hover:bg-[#00B894]/80 active:bg-[#00B894]/50 bg-[#00B894] text-white border border-[#00B894] rounded-[4px]">
-                                    Apply now
+                                    <a href="https://dvimmigration.org/services/apply-now/?plan=visa-plan" target="_blank" rel="noopener noreferrer">Apply now</a>
                                 </button>
                             </div>
                         </div>
@@ -164,8 +158,10 @@ const SliderTemp = () => {
                 {/* block3 */}
                 <div className="compare-table flex flex-col item-start py-0 gap-4 compare-table-wrapper">
                     <div className="compare-table-slider-header flex items-stretch justify-center gap-4">
+
                         <div className="whitespace-nowrap px-16 p-3 border border-[#F3F3F3] rounded-lg font-extrabold text-[18px] custom-box-shadow">
-                            <span className="text-[#00B894]">Green</span> Card
+                            <span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa
+                            +<span className="text-[#00B894]"> Green</span> Card
                         </div>
                     </div>
                     <div className="py-4">{renderDots(3)}</div>
@@ -260,16 +256,16 @@ const SliderTemp = () => {
                         <div className="sameblock custom-box-shadow border border-[#F3F3F3] px-6 rounded-[8px] items-center justify-center">
                             <div className="flex flex-col items-center gap-4 py-4">
                                 <div className="flex flex-row py-1 px-4 items-center justify-normal bg-[#FFD166] rounded-[4px] align-middle">
-                                    <div className="text-[#333333] text-[12px] leading-[18px]">Discount 50%</div>
+                                    <div className="text-[#333333] text-[12px] leading-[18px]">Discount 85%</div>
                                 </div>
                                 <div className="gap-4 flex flex-row items-center justify-center -my-2">
                                     <div className="text-[#c2bbbb] opacity-75 font-bold leading-[36px] strikethrough">
-                                        $19.99
+                                        $199.99
                                     </div>
-                                    <div className="text-[#00B894] font-extrabold text-[26px]">$9.99</div>
+                                    <div className="text-[#00B894] font-extrabold text-[26px]">$29.99</div>
                                 </div>
                                 <button className="py-2 px-6 hover:bg-[#00B894]/80 active:bg-[#00B894]/50 bg-[#00B894] text-white border border-[#00B894] rounded-[4px]">
-                                    Apply now
+                                    <a href="https://dvimmigration.org/services/apply-now/?plan=visa-green-card-plan" target="_blank" rel="noopener noreferrer">Apply now</a>
                                 </button>
                             </div>
                         </div>
@@ -279,10 +275,8 @@ const SliderTemp = () => {
                 <div className="compare-table flex flex-col item-start py-0 gap-4 compare-table-wrapper">
                     <div className="compare-table-slider-header flex items-stretch justify-center gap-4">
                         <div className="whitespace-nowrap px-16 p-3 border border-[#F3F3F3] rounded-lg font-extrabold text-[18px] custom-box-shadow">
-                            <span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa
-                            +<span className="text-[#00B894]"> Green</span> Card
+                            <span className="text-[#00B894]">Green</span> Card
                         </div>
-
                     </div>
                     <div className="py-4">{renderDots(3)}</div>
                     <table className="flex flex-col items-start p-0">
@@ -329,7 +323,7 @@ const SliderTemp = () => {
                                     Study
                                 </td>
                                 <td className="flex flex-row items-center">
-                                    <div>Up to <span className="text-[#00B894]">80% cheaper</span></div>
+                                    <div>Up to <span className="text-[#00B894]">25% cheaper</span></div>
                                 </td>
                             </tr>
                             <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-white">
@@ -375,17 +369,11 @@ const SliderTemp = () => {
                         <div className="sameblock flex border border-[#F3F3F3] border-l-0 rounded-[8px] rounded-tl-none rounded-bl-none custom-box-shadow"></div>
                         <div className="sameblock custom-box-shadow border border-[#F3F3F3] px-6 rounded-[8px] items-center justify-center">
                             <div className="flex flex-col items-center gap-4 py-4">
-                                <div className="flex flex-row py-1 px-4 items-center justify-normal bg-[#FFD166] rounded-[4px] align-middle">
-                                    <div className="text-[#333333] text-[12px] leading-[18px]">Discount 50%</div>
-                                </div>
-                                <div className="gap-4 flex flex-row items-center justify-center -my-2">
-                                    <div className="text-[#c2bbbb] opacity-75 font-bold leading-[36px] strikethrough">
-                                        $19.99
-                                    </div>
-                                    <div className="text-[#00B894] font-extrabold text-[26px]">$199.99</div>
+                                <div className="gap-4 flex flex-row items-center justify-center my-[18px]">
+                                    <div className="text-[#333333] font-extrabold text-[35px]">$49.99</div>
                                 </div>
                                 <button className="py-2 px-6 hover:bg-[#00B894]/80 active:bg-[#00B894]/50 bg-[#00B894] text-white border border-[#00B894] rounded-[4px]">
-                                    Apply now
+                                    <a href="https://dvimmigration.org/services/apply-now/?plan=green-card" target="_blank" rel="noopener noreferrer">Apply now</a>
                                 </button>
                             </div>
                         </div>
