@@ -17,7 +17,7 @@ const Popup = () => {
 
     return (
         <div
-            className={`popup px-4 py-2 flex justify-evenly drop-shadow ${visible ? 'sticky-bottom fade-in' : 'fade-out'
+            className={`popup px-4 py-2 flex justify-evenly drop-shadow ${visible ? 'visible fade-in' : 'fade-out'
                 }`}
         >
             <div className="flex flex-col">
