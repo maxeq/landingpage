@@ -205,8 +205,12 @@ li {
 }
 
 .mobbackground {
-  z-index: 2;
+  z-index: 300;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 
 

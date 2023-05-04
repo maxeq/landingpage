@@ -11,8 +11,16 @@ export default function Home() {
   const staticFAQRef = useRef(null);
 
   const toggleMobHeader = () => {
-    setIsMobHeaderVisible(!isMobHeaderVisible);
+    setIsMobHeaderVisible((prevState) => {
+      if (!prevState) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'auto';
+      }
+      return !prevState;
+    });
   };
+
 
   const [activeId, setActiveId] = useState<number | null>(null);
   const faqs = [
@@ -311,7 +319,7 @@ export default function Home() {
           className="font-extrabold text-[24px] leading-9 text-[#333333]"
         >
           <span id="faq" className="text-[#00B894]">
-            Have any question
+            Have any questions
           </span>{" "}
           or looking for the best US Visa consulting?
         </div>

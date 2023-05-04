@@ -1,4 +1,4 @@
-import React, { FunctionComponent, PropsWithChildren } from 'react';
+import React, { FunctionComponent, PropsWithChildren, useEffect, useState } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
 interface MobHeaderProps {
@@ -23,25 +23,29 @@ const MobHeader: FunctionComponent<PropsWithChildren<MobHeaderProps>> = ({
 
 
     return (
+
         <>
             <nav className="mobile-nav shadow-box-header flex justify-between py-2 md:hidden px-4 h-16">
                 <img src="img/logo.png" alt="Brand Logo" className="logo-image" />
                 <div className="flex items-center">
+
                     <img
                         src="img/closebutton.svg"
                         alt="Close Navigation"
-                        onClick={onClose}
+                        onClick={() => {
+                            onClose();
+                        }}
                     />
                 </div>
             </nav>
             <div className="mobile-background"></div>
-            <div className="mobbackground text-[#333333]">
+            <div className="mobbackground text-[#333333] d-flex flex-column justify-between min-h-screen">
                 <div className="py-8 px-4 space-y-4 flex-col flex">
                     <Link
                         onClick={onClose}
                         smooth={true}
                         duration={500}
-                        offset={-520}
+                        offset={-680}
                         to="visevsgc" className="font-bold text-[16px] leading-[28px]">
                         <span className="text-[#0A3161]">U</span>
                         <span className="text-[##B31942]">S</span> Visa vs.{" "}
@@ -51,7 +55,7 @@ const MobHeader: FunctionComponent<PropsWithChildren<MobHeaderProps>> = ({
                         onClick={onClose}
                         smooth={true}
                         duration={500}
-                        offset={-520} className="font-bold text-[16px] leading-[28px]">
+                        offset={-690} className="font-bold text-[16px] leading-[28px]">
                         About <span className="text-[#00B894]">Green</span> Card
                     </Link>
                     <Link
@@ -60,7 +64,7 @@ const MobHeader: FunctionComponent<PropsWithChildren<MobHeaderProps>> = ({
                         onClick={onClose}
                         smooth={true}
                         duration={500}
-                        offset={-1340}
+                        offset={-1470}
                     >
                         FAQ
                     </Link>
@@ -86,14 +90,14 @@ const MobHeader: FunctionComponent<PropsWithChildren<MobHeaderProps>> = ({
                         onClick={onClose}
                         smooth={true}
                         duration={500}
-                        offset={-1200}
+                        offset={-1350}
                         className="text-white rounded-[4px] w-32 px-6 py-2 bg-[#00B894] border border-[#00B894]"
                     >
                         Contact us
                     </Link>
 
                 </div>
-                <div className="footer-block py-8 flex px-4 flex-col">
+                <div className="footer-block py-8 flex px-4 flex-col my-[50px]">
                     <div className="text-white">
                         <div className="space-y-2">
                             <div className="flex gap-6 items-start">
