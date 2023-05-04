@@ -21,12 +21,12 @@ const Popup = () => {
                 }`}
         >
             <div className="flex flex-col">
-                <div className="py-1.5 leading-[18px] text-[10px]"><span className="font-bold text-black"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa </span>sumbission -<span className="font-bold text-[11px]">$199.99</span> </div>
-                <button className="text-[12px] font-bold leading-[18px] text-black border-[#333333]/80 border rounded-[2px] py-1 px-6">Buy</button>
+                <a href="https://dvimmigration.org/services/apply-now/?plan=visa-plan" target="_blank" rel="noopener noreferrer" className="py-1.5 leading-[18px] text-[10px]"><span className="font-bold text-black"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa </span>sumbission -<span className="font-bold text-[11px]">$199.99</span> </a>
+                <a style={{ width: "100%", textAlign: "center" }} className="text-[12px] font-bold leading-[18px] text-black border-[#333333]/80 border rounded-[2px] py-1 px-6">Buy</a>
             </div>
             <div className="flex flex-col">
-                <div className="py-1.5 leading-[18px] text-[10px] text-black"><span className="text-[#00B894] font-bold">Green</span><span className="font-bold"> Card </span>sumbission -<span className="font-bold text-[#00B894] text-[11px]">$9.99</span> </div>
-                <button className="text-[12px] font-bold leading-[18px] text-white bg-[#00B894] border-[#00B894] border rounded-[2px]  py-1 px-6">Buy</button>
+                <a href="https://dvimmigration.org/services/apply-now/?plan=visa-green-card-plan" target="_blank" rel="noopener noreferrer" className="py-1.5 leading-[18px] text-[10px] text-black"><span className="font-bold"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa +</span> <span className="text-[#00B894] font-bold">Green</span><span className="font-bold"> Card </span><span className="font-bold text-[#00B894] text-[11px]">$29.99</span></a>
+                <a style={{ width: "100%", textAlign: "center" }} className="text-[12px] font-bold leading-[18px] text-white bg-[#00B894] border-[#00B894] border rounded-[2px] py-1 px-6 inline-block" href="https://dvimmigration.org/services/apply-now/?plan=visa-green-card-plan" target="_blank" rel="noopener noreferrer">Buy</a>
             </div>
         </div >
     )
