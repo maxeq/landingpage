@@ -2,9 +2,16 @@ import SliderTemp from './components/sliders/sliderTemp'
 import FAQ from './components/faq';
 import { useState } from 'react';
 import Popup from './components/popup';
-
+import MobHeader from './components/mobheader';
 
 export default function Home() {
+
+  const [isMobHeaderVisible, setIsMobHeaderVisible] = useState(false);
+
+  const toggleMobHeader = () => {
+    setIsMobHeaderVisible(!isMobHeaderVisible);
+  };
+
   const [activeId, setActiveId] = useState<number | null>(null);
   const faqs = [
     {
@@ -46,12 +53,21 @@ export default function Home() {
   return (
     <main>
       <header className="relative md:h-[1440px]">
-        <nav className="mobile-nav flex justify-between py-2 md:hidden px-4 h-16">
-          <img src="img/logo.png" alt="Brand Logo" className="logo-image" />
-          <div className="flex items-center">
-            <img src="img/button.svg" alt="Navigation Bar" className="mobile-burger" />
-          </div>
-        </nav>
+        {isMobHeaderVisible ? (
+          <MobHeader onClose={toggleMobHeader} />
+        ) : (
+          <nav className="mobile-nav flex justify-between py-2 md:hidden px-4 h-16">
+            <img src="img/logo.png" alt="Brand Logo" className="logo-image" />
+            <div className="flex items-center">
+              <img
+                src="img/button.svg"
+                alt="Navigation Bar"
+                className="mobile-burger"
+                onClick={toggleMobHeader}
+              />
+            </div>
+          </nav>
+        )}
         <nav className="desktop-nav md:h-[112px] hidden md:flex justify-between items-center py-4 px-20 absolute bg-white left-0 right-0">
           <div className="flex items-center flex-shrink-0">
             <img src="img/logo.png" alt="Brand Logo" className="logo-image min-w-max " />
