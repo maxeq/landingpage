@@ -2,10 +2,20 @@ import SliderTemp from './components/sliders/sliderTemp'
 import FAQ from './components/faq';
 import Popup from './components/popup';
 import MobHeader from './components/mobheader';
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
+import Modal from 'react-modal';
+
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
+  useEffect(() => {
+    Modal.setAppElement('#app-root');
+  }, []);
 
   const [isMobHeaderVisible, setIsMobHeaderVisible] = useState(false);
   const staticFAQRef = useRef(null);
@@ -291,7 +301,34 @@ export default function Home() {
         </div>
         <div className="bg-white flex flex-col items-center p-3 gap-4 py-4 my-4 mx-4 rounded-lg justify-center">
           <p className="items-center justify-center flex">Learn more about the green card by watching the video about the benefits and comparison of the green card with a US visa.</p>
-          <img src="img/adv/video.svg" alt="Navigation Bar" />
+          <img src="img/adv/video.svg" alt="Navigation Bar" onClick={toggleModal} style={{ cursor: 'pointer' }} />
+          <Modal
+            isOpen={isModalOpen}
+            onRequestClose={toggleModal}
+            contentLabel="Video Modal"
+            className="your-modal-class"
+            overlayClassName="your-overlay-class"
+          >
+            <iframe
+              width="373"
+              height="373"
+              src="https://www.youtube.com/embed/z1R395afUeY"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            <button
+              className="absolute top-0 right-0 p-2 focus:outline-none"
+              onClick={toggleModal}
+            >
+              <img
+                src="img/closebutton.svg"
+                alt="Close"
+                className="w-6 h-6 text-white fill-current"
+              />
+            </button>
+          </Modal>
         </div>
       </div>
       <div className="faq-block p-4">

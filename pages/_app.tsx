@@ -4,8 +4,8 @@ import Layout from './components/layouts/layout';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-
-    <Component {...pageProps} />
-
+    <div id="app-root">
+      <Component {...pageProps} />
+    </div>
   );
 }
