@@ -8,6 +8,37 @@ import Modal from 'react-modal';
 
 
 export default function Home() {
+  const [status, setStatus] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+
+    setIsSubmitting(true);
+
+    // Get form data
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData);
+
+    // Send form data to the serverless function
+    try {
+      const response = await fetch('/api/submitForm', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+      setStatus(result.message);
+    } catch (error) {
+      setStatus('Error: ' + (error as Error).message);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
@@ -361,10 +392,10 @@ export default function Home() {
           or looking for the best US Visa consulting?
         </div>
         <div className="py-4">With more than 25 combine years of experience we are your best immigration solution.</div>
-        <form className="space-y-4 pb-4">
+        <form className="space-y-4 pb-4" onSubmit={handleSubmit}>
           <div className="flex flex-col">
             <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
-            <input type="text" placeholder="Full Name" id="name" name="name" className="border placeholder-[#C8C8C8] border-[#E9E9E9] rounded-[4px] py-2 px-4 text-[#C8C8C8] focus:ring-green-400 focus:border-[#00B894] outline-none" />
+            <input type="text" placeholder="Full Name" id="name" name="name" className="border placeholder-[#C8C8C8] border-[#E9E9E9] rounded-[4px] py-2 px-4 focus:ring-green-400 focus:border-[#00B894] outline-none" />
           </div>
           <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
           <div className="flex flex-col">
@@ -376,13 +407,20 @@ export default function Home() {
           </div>
           <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
           <div className="flex flex-col">
-            <input type="question" id="phone" placeholder="Type your question here and expect our call" name="phone" className="border border-[#E9E9E9] rounded-[4px] p-2 px-4  placeholder-[#C8C8C8] focus:ring-green-400 focus:border-[#00B894] outline-none" />
+            <input type="question" id="question" placeholder="Type your question here and expect our call" name="question" className="border border-[#E9E9E9] rounded-[4px] p-2 px-4  placeholder-[#C8C8C8] focus:ring-green-400 focus:border-[#00B894] outline-none" />
+          </div>
+          <div className="flex flex-col">
+            <button type="submit" disabled={isSubmitting} className="bg-[#00B894] text-white rounded-[4px] py-2 px-4 font-bold hover:bg-[#00B894]/80 active:bg-[#00B894]/50">Contact us</button>
+            <div className="h-6">
+              {status && (
+                <p className="text-green-600">
+                  {status}
+                </p>
+              )}
+            </div>
           </div>
         </form>
-        <div className="flex flex-col">
-          <button className="bg-[#00B894] text-white rounded-[4px] py-2 px-4 font-bold hover:bg-[#00B894]/80 active:bg-[#00B894]/50">Contact us</button>
-        </div>
-        <div className="text-[#909090] text-[12px] leading-[18px] mt-4  font-[200]">
+        <div className="text-[#909090] text-[12px] leading-[18px] font-[200]">
           By clicking the "contact us" button you agree to our <a className="text-[#00B894] font-normal" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/terms-and-conditions/">Terms and Conditions</a> and acknowledge that your information will be handled as detailed in our <a className="text-[#00B894] font-normal" target="_blank" rel="noopener noreferrer" href=" https://dvimmigration.org/privacy-policy/">Privacy Policy</a> You acknowledge that in order to continue the process our representative will contact you.
         </div>
       </div>
