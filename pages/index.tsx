@@ -25,7 +25,7 @@ export default function Home() {
     const missingFields = requiredFields.filter(field => !data[field]);
 
     if (missingFields.length > 0) {
-      setStatus(`Fill out: ${missingFields.join(', ')}`);
+      setStatus(`Fill out your ${missingFields.join(', ')}`);
       setIsSubmitting(false);
       return;
     }
