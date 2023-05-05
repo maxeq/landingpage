@@ -20,6 +20,16 @@ export default function Home() {
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData);
 
+    // Validate form data
+    const requiredFields = ['name', 'email', 'phone', 'question'];
+    const missingFields = requiredFields.filter(field => !data[field]);
+
+    if (missingFields.length > 0) {
+      setStatus(`Please fill out the following fields: ${missingFields.join(', ')}`);
+      setIsSubmitting(false);
+      return;
+    }
+
     // Send form data to the serverless function
     try {
       const response = await fetch('/api/submitForm', {
@@ -38,6 +48,7 @@ export default function Home() {
       setIsSubmitting(false);
     }
   };
+
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const toggleModal = () => {
@@ -392,7 +403,7 @@ export default function Home() {
           or looking for the best US Visa consulting?
         </div>
         <div className="py-4">With more than 25 combine years of experience we are your best immigration solution.</div>
-        <form className="space-y-4 pb-4" onSubmit={handleSubmit}>
+        <form className="space-y-4" onSubmit={handleSubmit}>
           <div className="flex flex-col">
             <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
             <input type="text" placeholder="Full Name" id="name" name="name" className="border placeholder-[#C8C8C8] border-[#E9E9E9] rounded-[4px] py-2 px-4 focus:ring-green-400 focus:border-[#00B894] outline-none" />
