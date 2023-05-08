@@ -19,12 +19,12 @@ body {
 }
 
 tr {
-height: 68px;
+  height: 68px;
 }
-
+/* 
 tr:hover {
   background-color: rgba(207, 207, 207, 0.5);
-}
+} */
 
 .footer-block {
   background-color: #333333;
@@ -325,4 +325,12 @@ li {
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
+}
+
+
+.box-shadow-compare {
+  box-shadow: 0px 2.232680320739746px 2.232680320739746px 0px rgba(0, 0, 0, 0.0155),
+0px 5.646615982055664px 5.646615982055664px 0px rgba(0, 0, 0, 0.0222),
+0px 11.518566131591797px 11.518566131591797px 0px rgba(0, 0, 0, 0.0278),
+0px 65px 65px 0px rgba(0, 0, 0, 0.05);
 }
