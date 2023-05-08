@@ -134,7 +134,7 @@ export default function Home() {
             )}
             <nav className="desktop-nav md:h-[112px] hidden md:flex justify-between items-center py-4 px-20">
               <div className="flex items-center flex-shrink-0">
-                <img src="img/logo.png" alt="Brand Logo" className="logo-image min-w-max " />
+                <img src="img/logo.png" alt="Brand Logo" className="logo-image min-w-max  md:w-[108.99px] md:h-[80px]" />
               </div>
               <div className="flex items-center gap-8 whitespace-nowrap">
                 <div className="flex items-center gap-8 text-[16px] font-bold">
@@ -195,7 +195,7 @@ export default function Home() {
               <hr className="border-1 flex border-[#F3F3F3] my-0"></hr>
               <div className="font-bold">
                 <h4 className="mb-1 text-black  flex-col flex">Suitable for:</h4>
-                <ul className="list-none font-normal list-inside flex p-0 align-start gap-1 flex-row">
+                <ul className="list-none font-normal list-inside flex p-0 align-start gap-1flex-col">
                   <ul>
                     <li className="flex gap-2">
                       <img src="img/dot.svg" alt="bullet" />
@@ -487,71 +487,81 @@ export default function Home() {
       <div className="md:hidden">
         <Popup />
       </div>
-      <div className="hidden md:block">
-        <div className="mt-[80px]">
-          <div className="statue-image-desktop w-full h-[667px] absolute">
+
+
+      <div className="content-container">
+        <div className="hidden md:block">
+          <div className="mt-[80px]">
+            <div className="statue-image-desktop absolute">
+            </div>
+            <div className="flex flex-col px-20 gap-6">
+              <h1 className="md:text-[40px] font-extrabold leading-[56px] items-start text-white">Get legal immigration <br></br> to the <span className="text-united">United</span> <span className="text-states">States</span> today</h1>
+              <p className="text-[#FFFFFF] text-[18px] leading-[28px] font-light">We are helping thousands of people annually with obtaining their visas and <br></br> Green Cards to the United States legally.</p>
+            </div>
           </div>
-          <div className="flex flex-col px-20 gap-6">
-            <h1 className="md:text-[40px] font-extrabold leading-[56px] items-start text-white">Get legal immigration <br></br> to the <span className="text-united">United</span> <span className="text-states">States</span> today</h1>
-            <p className="text-[#FFFFFF] text-[18px] leading-[28px] font-light">We are helping thousands of people annually with obtaining their visas and <br></br> Green Cards to the United States legally.</p>
-          </div>
-        </div>
-        {/* solutions */}
-        <div className="p-20">
-          <div className="cheapest-solutions border bg-white z-2 inline-flex flex-grow-0 flex-col rounded-lg p-12">
-            <h2 className="font-extrabold font-[#333333] flex-grow-0 leading-[48px] text-[32px] text-black">The cheapest immigration Solution</h2>
-            <div className="flex font-extrabold items-center justify-start my-2">
-              <div className="gap-4 flex items-center mb-1">
-                <div className="border-2 border-[#00B894] rounded-[4px] text-[#00B894] leading[32px] px-4 py-1 text-[22px]">
-                  $29.99
+          {/* solutions */}
+          <div className="p-20">
+            <div className="cheapest-solutions border bg-white z-2 inline-flex flex-grow-0 flex-col rounded-lg p-12">
+              <h2 className="font-extrabold font-[#333333] flex-grow-0 leading-[48px] text-[32px] text-black">The cheapest immigration Solution</h2>
+              <div className="flex font-extrabold items-center justify-start my-2">
+                <div className="gap-4 flex items-center mb-1">
+                  <div className="border-2 border-[#00B894] rounded-[4px] text-[#00B894] leading[32px] px-4 py-1 text-[22px]">
+                    $29.99
+                  </div>
+                  <div className="text-[#909090] leading-[32px] py-2 mr-4 text-[22px] strikethrough">
+                    $199.99
+                  </div>
                 </div>
-                <div className="text-[#909090] leading-[32px] py-2 mr-4 text-[22px] strikethrough">
-                  $199.99
+              </div>
+              <div className="flex">
+                <div className='gap-4 item-start flex flex-col mr-12'>
+                  <h3 className="font-medium text-[16px] text-[#333333]">Check your eligibility to live, work and study in the <br></br> <span className="text-united font-extrabold">United</span> <span className="text-states font-extrabold">States</span> today!</h3>
+                  <div className="flex font-bold leading-[26px]">
+                    <button className="bg-[#00B894] hover:bg-[#00B894]/80 active:bg-[#00B894]/50 border border-[#00B894] text-white border rounded-[6px] px-6 py-2 mr-4">
+                      <a href="https://dvimmigration.org/services/apply-now/" target="_blank" rel="noopener noreferrer">Apply Now</a>
+                    </button>
+                    <Link to="visevsgc"
+                      smooth={true}
+                      duration={500}
+                      className="border hover:border-[#00B894]/80 active:border-[#00B894]/50 border-[#00B894] rounded-[6px] px-6 py-2 hover:text-black">
+                      More options
+                    </Link>
+                  </div>
+                  <p className="text-[14px] ">More than 25 combine years of experience.</p>
+                </div>
+                <div className="w-px bg-[#F3F3F3] mx-6 self-stretch"></div>
+                <div className="font-bold ml-8">
+                  <h4 className="mb-1 text-black">Suitable for:</h4>
+                  <ul className="list-none font-normal list-inside flex p-0 align-start gap-1 flex-grow-0 flex-col">
+                    <li className="flex gap-2">
+                      <img src="img/dot.svg" alt="bullet" />
+                      Live
+                    </li>
+                    <li className="flex gap-2">
+                      <img src="img/dot.svg" alt="bullet" />
+                      Study
+                    </li>
+                    <li className="flex gap-2">
+                      <img src="img/dot.svg" alt="bullet" />
+                      Work
+                    </li>
+                    <li className="flex gap-2">
+                      <img src="img/dot.svg" alt="bullet" />
+                      Travel
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div className="flex">
-              <div className='gap-4 item-start flex flex-col'>
-                <h3 className="font-medium text-[16px] text-[#333333]">Check your eligibility to live, work and study in the <br></br> <span className="text-united font-extrabold">United</span> <span className="text-states font-extrabold">States</span> today!</h3>
-                <div className="flex font-bold leading-[26px]">
-                  <button className="bg-[#00B894] hover:bg-[#00B894]/80 active:bg-[#00B894]/50 border border-[#00B894] text-white border rounded-[6px] px-6 py-2 mr-4">
-                    <a href="https://dvimmigration.org/services/apply-now/" target="_blank" rel="noopener noreferrer">Apply Now</a>
-                  </button>
-                  <Link to="visevsgc"
-                    smooth={true}
-                    duration={500}
-                    className="border hover:border-[#00B894]/80 active:border-[#00B894]/50 border-[#00B894] rounded-[6px] px-6 py-2 hover:text-black">
-                    More options
-                  </Link>
-                </div>
-                <p className="text-[14px] ">More than 25 combine years of experience.</p>
-              </div>
-              <div className="w-px bg-[#F3F3F3] mx-6 self-stretch ml-10"></div>
-              <div className="font-bold ml-8">
-                <h4 className="mb-1 text-black">Suitable for:</h4>
-                <ul className="list-none font-normal list-inside flex p-0 align-start gap-1 flex-grow-0 flex-col">
-
-                  <li className="flex gap-2">
-                    <img src="img/dot.svg" alt="bullet" />
-                    Live
-                  </li>
-                  <li className="flex gap-2">
-                    <img src="img/dot.svg" alt="bullet" />
-                    Study
-                  </li>
-                  <li className="flex gap-2">
-                    <img src="img/dot.svg" alt="bullet" />
-                    Work
-                  </li>
-                  <li className="flex gap-2">
-                    <img src="img/dot.svg" alt="bullet" />
-                    Travel
-                  </li>
-
-                </ul>
+          </div>
+          <div>
+            <div className="compare-table flex flex-col item-start pt-8 gap-4 compare-table-wrapper">
+              <div className="compare-background"></div>
+              <div className="compare-table-title gap-1 px-4">
+                <p id="visevsgc" className="text-[24px] font-extrabold text-black"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
+                <p className="align-top py-3 ">Comparing the American visa and green card in all aspects of life will help you decide which option<br></br> suits you best.</p>
               </div>
             </div>
-
           </div>
         </div>
         {/* apply now */}
