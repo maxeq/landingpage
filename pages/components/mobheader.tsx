@@ -23,9 +23,8 @@ const MobHeader: FunctionComponent<PropsWithChildren<MobHeaderProps>> = ({
 
 
     return (
-
         <>
-            <nav className="mobile-nav shadow-box-header flex justify-between py-2 md:hidden px-4 h-16">
+            <nav className="mobile-nav shadow-box-header bg-white flex justify-between py-2 md:hidden px-4 h-16">
                 <img src="img/logo.png" alt="Brand Logo" className="logo-image" />
                 <div className="flex items-center">
 
