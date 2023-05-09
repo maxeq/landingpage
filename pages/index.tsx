@@ -137,14 +137,12 @@ export default function Home() {
                 <img src="img/logo.png" alt="Brand Logo" className="logo-image min-w-max  md:w-[108.99px] md:h-[80px]" />
               </div>
               <div className="flex items-center gap-8 whitespace-nowrap">
-                <div className="flex items-center gap-8 text-[16px] font-bold">
-                  <p className=""><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
-                  <p>About <span className="text-[#00B894]">Green</span> Card</p>
-                  <p>About DV Immigration</p>
-                  <p>FAQ</p>
-                  <p>Contacts</p>
+                <div className="flex items-center gap-8 text-[16px] font-bold ">
+                  <p className="cursor-pointer"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
+                  <p className="cursor-pointer">About <span className="text-[#00B894]">Green</span> Card</p>
+                  <p className="cursor-pointer">FAQ</p>
                 </div>
-                <button className="bg-[#00B894] rounded-[4px] py-2 px-[24px] text-white border items-center font-bold">
+                <button className="bg-[#00B894] hover:bg-[#00B894]/80 rounded-[4px] py-2 px-[24px] text-white border items-center font-bold">
                   Contact us
                 </button>
               </div>
@@ -523,7 +521,7 @@ export default function Home() {
                     <Link to="visevsgc"
                       smooth={true}
                       duration={500}
-                      className="border hover:border-[#00B894]/80 active:border-[#00B894]/50 border-[#00B894] rounded-[6px] px-6 py-2 hover:text-black">
+                      className="border hover:border-[#00B894]/80 hover:bg-[#00B894]/80 hover:text-white active:border-[#00B894]/50 border-[#00B894] rounded-[6px] px-6 py-2 hover:text-black">
                       More options
                     </Link>
                   </div>
