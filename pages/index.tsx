@@ -553,7 +553,7 @@ export default function Home() {
             </div>
           </div>
           <div className=''>
-            <div className="absolute compare-table flex flex-col item-start pt-8 gap-4 compare-table-wrapper">
+            <div className="absolute compare-table flex flex-col item-start pt-14 gap-4 compare-table-wrapper">
               <div className="compare-background"></div>
               <div className="compare-table-title gap-1 px-4">
                 <p id="visevsgc" className="text-[24px] font-extrabold text-black"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
