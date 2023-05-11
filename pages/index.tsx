@@ -552,305 +552,306 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className=''>
-            <div className="px-4 absolute compare-table flex flex-col item-start pt-14 compare-table-wrapper">
-              <div className=""></div>
-              <div className="">
-                <p id="visevsgc" className="text-[24px] font-extrabold text-black"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
-                <p className="align-top py-3 ">Comparing the American visa and green card in all aspects of life will help you decide which option<br></br> suits you best.</p>
+
+
+          <div className='compare-background-desktop'>
+            <div className='content-container'>
+              <div className="px-4 absolute compare-table flex flex-col item-start pt-14 compare-table-wrapper">
+                <div className=""></div>
+                <div className="">
+                  <p id="visevsgc" className="text-[24px] font-extrabold text-black"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
+                  <p className="align-top py-3 ">Comparing the American visa and green card in all aspects of life will help you decide which option<br></br> suits you best.</p>
+                </div>
               </div>
             </div>
-          </div>
-
-
-          <div className="mt-28 justify-start">
-            <table className="flex flex-col">
-              <tbody>
-                <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-[#0A31610D]">
-                  <td className="flex flex-row items-center gap-4">
-                    <img src="img/table/Vector.svg" alt="Work permit" />
-                    Work Permit
-                  </td>
-                </tr>
-                <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-white">
-                  <td className="flex flex-row items-center gap-4">
-                    <img src="img/table/Vector-1.svg" alt="Family" />
-                    Family
-                  </td>
-                </tr>
-                <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-[#0A31610D]">
-                  <td className="flex flex-row items-center gap-4">
-                    <img src="img/table/Vector-2.svg" alt="Work permit" />
-                    Validity
-                  </td>
-                </tr>
-                <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-white">
-                  <td className="flex flex-row items-center gap-4">
-                    <img src="img/table/Vector-3.svg" alt="Work permit" />
-                    Citezenship
-                  </td>
-                </tr>
-                <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-[#0A31610D]">
-                  <td className="flex flex-row items-center gap-4">
-                    <img src="img/table/Vector-4.svg" alt="Work permit" />
-                    Study
-                  </td>
-                </tr>
-                <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-white">
-                  <td className="flex flex-row items-center gap-4">
-                    <img src="img/table/Vector-5.svg" alt="Work permit" />
-                    Medicare
-                  </td>
-                </tr>
-                <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-[#0A31610D]">
-                  <td className="flex flex-row items-center gap-4">
-                    <img src="img/table/Vector-6.svg" alt="Work permit" />
-                    US Travel
-                  </td>
-                </tr>
-                <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-white">
-                  <td className="flex flex-row items-center gap-4">
-                    <img src="img/table/Vector-7.svg" alt="Work permit" />
-                    Right to vote
-                  </td>
-                </tr>
-                <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-[#0A31610D]">
-                  <td className="flex flex-row items-center gap-4">
-                    <img src="img/table/Vector-8.svg" alt="Work permit" />
-                    Additional fees
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-
-
-
-
-            <div className="flex flex-row gap-6 -mt-[719px] justify-center z-20 ml-56 overflow-x-auto">
-
-              <table className="min-w-[200px] w-[302px] bg-white bg-opacity-75 box-border h-[90%] relative flex flex-col custom-box-shadow items-center border border-collapse mt-[22px] border-[#F3F3F3] rounded-[16px]">
-                <thead className="mt-[16px] w-full items-center justify-center flex header my-4 border border-l-0 border-r-0 border-t-0 h-full">
-                  <tr className="">
-                    <th><div className="whitespace-nowrap rounded-lg font-extrabold text-[22px] mt-3">
-                      <span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa
-                    </div></th>
-                  </tr>
-                </thead>
-                <tbody className="flex flex-col -mt-3">
-                  <tr className="w-full font-bold items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      <img src="img/table/no-icon.svg" alt="No" />
+            <div className="mt-28 justify-start content-container">
+              <table className="flex flex-col">
+                <tbody>
+                  <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-[#0A31610D]">
+                    <td className="flex flex-row items-center gap-4">
+                      <img src="img/table/Vector.svg" alt="Work permit" />
+                      Work Permit
                     </td>
                   </tr>
-                  <tr className="w-full items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      For each
+                  <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-white">
+                    <td className="flex flex-row items-center gap-4">
+                      <img src="img/table/Vector-1.svg" alt="Family" />
+                      Family
                     </td>
                   </tr>
-                  <tr className="w-full items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      Limited
+                  <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-[#0A31610D]">
+                    <td className="flex flex-row items-center gap-4">
+                      <img src="img/table/Vector-2.svg" alt="Work permit" />
+                      Validity
                     </td>
                   </tr>
-                  <tr className="w-full items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      <img src="img/table/no-icon.svg" alt="No" />
+                  <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-white">
+                    <td className="flex flex-row items-center gap-4">
+                      <img src="img/table/Vector-3.svg" alt="Work permit" />
+                      Citezenship
                     </td>
                   </tr>
-                  <tr className="w-full items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      <div>High fees</div>
+                  <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-[#0A31610D]">
+                    <td className="flex flex-row items-center gap-4">
+                      <img src="img/table/Vector-4.svg" alt="Work permit" />
+                      Study
                     </td>
                   </tr>
-                  <tr className="w-full font-bold items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      <img src="img/table/no-icon.svg" alt="No" />
+                  <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-white">
+                    <td className="flex flex-row items-center gap-4">
+                      <img src="img/table/Vector-5.svg" alt="Work permit" />
+                      Medicare
                     </td>
                   </tr>
-                  <tr className="w-full font-bold items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      Free
+                  <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-[#0A31610D]">
+                    <td className="flex flex-row items-center gap-4">
+                      <img src="img/table/Vector-6.svg" alt="Work permit" />
+                      US Travel
                     </td>
                   </tr>
-                  <tr className="w-full p-4 font-bold items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      <img src="img/table/no-icon.svg" alt="No" />
+                  <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-white">
+                    <td className="flex flex-row items-center gap-4">
+                      <img src="img/table/Vector-7.svg" alt="Work permit" />
+                      Right to vote
                     </td>
                   </tr>
-                  <tr className="w-full items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      Yes
+                  <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-[#0A31610D]">
+                    <td className="flex flex-row items-center gap-4">
+                      <img src="img/table/Vector-8.svg" alt="Work permit" />
+                      Additional fees
                     </td>
                   </tr>
                 </tbody>
-                <tfoot className="flex justify-center flex-col my-4 border -mt-[6px] w-full border-l-0 border-r-0 border-b-0">
-                  <tr className='h-full my-5 space-y-4'>
-                    <td className="text-[32px] font-bold justify-center flex h-full items-center">
-                      $199.99
-                    </td>
-                    <td className=" justify-center items-center flex">
-                      <button className="py-2 px-6 hover:bg-[#00B894]/80 active:bg-[#00B894]/50 font-bold hover:text-white bg-white text-black border border-[#00B894] rounded-[4px]">
-                        <a href="https://dvimmigration.org/services/apply-now/?plan=visa-plan" target="_blank" rel="noopener noreferrer">Apply now</a>
-                      </button>
-                    </td>
-                  </tr>
-                </tfoot>
-
               </table>
 
 
 
 
-              <table className="min-w-[302px] box-shadow-compare bg-white bg-opacity-75 box-border h-[90%] relative flex flex-col custom-box-shadow items-center border border-collapse border-[#00B894] rounded-[16px]">
-                <thead className="mt-[38px] w-full items-center justify-center flex header my-4 border border-l-0 border-r-0 border-t-0 h-full">
-                  <tr className="">
-                    <th><div className="whitespace-nowrap rounded-lg font-extrabold text-[26px]">
-                      <span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa
-                      +<span className="text-[#00B894]"> Green</span> Card
-                    </div></th>
-                  </tr>
-                </thead>
-                <tbody className="flex flex-col -mt-3">
-                  <tr className="w-full font-bold items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      <img src="img/table/yes-icon.svg" alt="Yes" />
-                    </td>
-                  </tr>
-                  <tr className="w-full font-bold items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      1 for all
-                    </td>
-                  </tr>
-                  <tr className="w-full font-bold items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      Life-long
-                    </td>
-                  </tr>
-                  <tr className="w-full font-bold items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      <img src="img/table/yes-icon.svg" alt="Yes" />
-                    </td>
-                  </tr>
-                  <tr className="w-full font-bold items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      <div>Up to <span className="text-[#00B894]">80% cheaper</span></div>
-                    </td>
-                  </tr>
-                  <tr className="w-full font-bold items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      <img src="img/table/yes-icon.svg" alt="Yes" />
-                    </td>
-                  </tr>
-                  <tr className="w-full font-bold items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      Free
-                    </td>
-                  </tr>
-                  <tr className="w-full p-4 font-bold items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      <img src="img/table/yes-icon.svg" alt="Yes" />
-                    </td>
-                  </tr>
-                  <tr className="w-full font-bold items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      No
-                    </td>
-                  </tr>
-                </tbody>
-                <tfoot className="flex justify-center flex-col pb-20 py-6 gap-3 border -mt-[6px] h-full  w-full border-l-0 border-r-0 border-b-0">
-                  <tr className="w-full items-center justify-center flex flex-col h-full">
-                    <td className="flex text-[#333333] text-[14px] h-full font-bold leading-[18px] flex-row py-1 px-4 items-center justify-normal bg-[#FFD166] rounded-[4px] align-middle">
-                      Discount 85%
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="flex flex-row items-center space-x-4 justify-center h-full">
-                      <div className="text-[#c2bbbb] opacity-75 font-bold text-[18px] leading-[36px] line-through">$199.99</div>
-                      <div className="text-[#00B894] font-extrabold text-[32px]">$29.99</div>
-                    </td>
-                    <td className="flex justify-center items-center h-full">
-                      <button className="py-2 px-6 hover:bg-[#00B894]/80 active:bg-[#00B894]/50 bg-[#00B894] text-white border border-[#00B894] rounded-[4px] font-bold">
-                        <a href="https://dvimmigration.org/services/apply-now/?plan=visa-green-card-plan" target="_blank" rel="noopener noreferrer">Apply now</a>
-                      </button>
-                    </td>
-                  </tr>
-                </tfoot>
-              </table>
+
+              <div className="flex flex-row gap-6 -mt-[719px] justify-center z-20 ml-56 overflow-x-auto">
+
+                <table className="min-w-[200px] w-[302px] bg-white bg-opacity-75 box-border h-[90%] relative flex flex-col custom-box-shadow items-center border border-collapse mt-[22px] border-[#F3F3F3] rounded-[16px]">
+                  <thead className="mt-[16px] w-full items-center justify-center flex header my-4 border border-l-0 border-r-0 border-t-0 h-full">
+                    <tr className="">
+                      <th><div className="whitespace-nowrap rounded-lg font-extrabold text-[22px] mt-3">
+                        <span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa
+                      </div></th>
+                    </tr>
+                  </thead>
+                  <tbody className="flex flex-col -mt-3">
+                    <tr className="w-full font-bold items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        <img src="img/table/no-icon.svg" alt="No" />
+                      </td>
+                    </tr>
+                    <tr className="w-full items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        For each
+                      </td>
+                    </tr>
+                    <tr className="w-full items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        Limited
+                      </td>
+                    </tr>
+                    <tr className="w-full items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        <img src="img/table/no-icon.svg" alt="No" />
+                      </td>
+                    </tr>
+                    <tr className="w-full items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        <div>High fees</div>
+                      </td>
+                    </tr>
+                    <tr className="w-full font-bold items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        <img src="img/table/no-icon.svg" alt="No" />
+                      </td>
+                    </tr>
+                    <tr className="w-full font-bold items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        Free
+                      </td>
+                    </tr>
+                    <tr className="w-full p-4 font-bold items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        <img src="img/table/no-icon.svg" alt="No" />
+                      </td>
+                    </tr>
+                    <tr className="w-full items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        Yes
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot className="flex justify-center flex-col my-4 border -mt-[6px] w-full border-l-0 border-r-0 border-b-0">
+                    <tr className='h-full my-5 space-y-4'>
+                      <td className="text-[32px] font-bold justify-center flex h-full items-center">
+                        $199.99
+                      </td>
+                      <td className=" justify-center items-center flex">
+                        <button className="py-2 px-6 hover:bg-[#00B894]/80 active:bg-[#00B894]/50 font-bold hover:text-white bg-white text-black border border-[#00B894] rounded-[4px]">
+                          <a href="https://dvimmigration.org/services/apply-now/?plan=visa-plan" target="_blank" rel="noopener noreferrer">Apply now</a>
+                        </button>
+                      </td>
+                    </tr>
+                  </tfoot>
+
+                </table>
 
 
-              <table className="min-w-[200px] w-[302px] bg-white bg-opacity-75 box-border h-[90%] relative flex flex-col custom-box-shadow items-center border border-collapse mt-[22px] border-[#F3F3F3] rounded-[16px]">
-                <thead className="mt-[16px] w-full items-center justify-center flex header my-4 border border-l-0 border-r-0 border-t-0 h-full">
-                  <tr className="">
-                    <th><div className="whitespace-nowrap rounded-lg font-extrabold text-[22px] mt-3">
-                      <span className="text-[#00B894]"> Green</span> Card
-                    </div></th>
-                  </tr>
-                </thead>
-                <tbody className="flex flex-col -mt-3">
-                  <tr className="w-full font-bold items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      <img src="img/table/yes-icon.svg" alt="Yes" />
-                    </td>
-                  </tr>
-                  <tr className="w-full items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      For each
-                    </td>
-                  </tr>
-                  <tr className="w-full font-bold items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      Mixed
-                    </td>
-                  </tr>
-                  <tr className="w-full font-bold items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      <img src="img/table/yes-icon.svg" alt="Yes" />
-                    </td>
-                  </tr>
-                  <tr className="w-full font-bold items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      <div>Up to <span className="text-[#00B894]">25% cheaper</span></div>
-                    </td>
-                  </tr>
-                  <tr className="w-full font-bold items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      <img src="img/table/yes-icon.svg" alt="Yes" />
-                    </td>
-                  </tr>
-                  <tr className="w-full font-bold items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      Free
-                    </td>
-                  </tr>
-                  <tr className="w-full p-4 font-bold items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      Mixed
-                    </td>
-                  </tr>
-                  <tr className="w-full font-bold items-center justify-center flex flex-row">
-                    <td className="flex flex-row items-center">
-                      No
-                    </td>
-                  </tr>
-                </tbody>
-                <tfoot className="flex justify-center flex-col my-4 border -mt-[6px] w-full border-l-0 border-r-0 border-b-0">
-                  <tr className='h-full my-5 space-y-4'>
-                    <td className="text-[32px] font-bold justify-center flex h-full items-center">
-                      $29.99
-                    </td>
-                    <td className=" justify-center items-center flex">
-                      <button className="py-2 px-6 hover:bg-[#00B894]/80 active:bg-[#00B894]/50 font-bold hover:text-white bg-white text-black border border-[#00B894] rounded-[4px]">
-                        <a href="https://dvimmigration.org/services/apply-now/?plan=green-card" target="_blank" rel="noopener noreferrer">Apply now</a>
-                      </button>
-                    </td>
-                  </tr>
-                </tfoot>
 
-              </table>
 
+                <table className="min-w-[302px] box-shadow-compare bg-white bg-opacity-75 box-border h-[90%] relative flex flex-col custom-box-shadow items-center border border-collapse border-[#00B894] rounded-[16px]">
+                  <thead className="mt-[38px] w-full items-center justify-center flex header my-4 border border-l-0 border-r-0 border-t-0 h-full">
+                    <tr className="">
+                      <th><div className="whitespace-nowrap rounded-lg font-extrabold text-[26px]">
+                        <span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa
+                        +<span className="text-[#00B894]"> Green</span> Card
+                      </div></th>
+                    </tr>
+                  </thead>
+                  <tbody className="flex flex-col -mt-3">
+                    <tr className="w-full font-bold items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        <img src="img/table/yes-icon.svg" alt="Yes" />
+                      </td>
+                    </tr>
+                    <tr className="w-full font-bold items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        1 for all
+                      </td>
+                    </tr>
+                    <tr className="w-full font-bold items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        Life-long
+                      </td>
+                    </tr>
+                    <tr className="w-full font-bold items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        <img src="img/table/yes-icon.svg" alt="Yes" />
+                      </td>
+                    </tr>
+                    <tr className="w-full font-bold items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        <div>Up to <span className="text-[#00B894]">80% cheaper</span></div>
+                      </td>
+                    </tr>
+                    <tr className="w-full font-bold items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        <img src="img/table/yes-icon.svg" alt="Yes" />
+                      </td>
+                    </tr>
+                    <tr className="w-full font-bold items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        Free
+                      </td>
+                    </tr>
+                    <tr className="w-full p-4 font-bold items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        <img src="img/table/yes-icon.svg" alt="Yes" />
+                      </td>
+                    </tr>
+                    <tr className="w-full font-bold items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        No
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot className="flex justify-center flex-col pb-20 py-6 gap-3 border -mt-[6px] h-full  w-full border-l-0 border-r-0 border-b-0">
+                    <tr className="w-full items-center justify-center flex flex-col h-full">
+                      <td className="flex text-[#333333] text-[14px] h-full font-bold leading-[18px] flex-row py-1 px-4 items-center justify-normal bg-[#FFD166] rounded-[4px] align-middle">
+                        Discount 85%
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="flex flex-row items-center space-x-4 justify-center h-full">
+                        <div className="text-[#c2bbbb] opacity-75 font-bold text-[18px] leading-[36px] line-through">$199.99</div>
+                        <div className="text-[#00B894] font-extrabold text-[32px]">$29.99</div>
+                      </td>
+                      <td className="flex justify-center items-center h-full">
+                        <button className="py-2 px-6 hover:bg-[#00B894]/80 active:bg-[#00B894]/50 bg-[#00B894] text-white border border-[#00B894] rounded-[4px] font-bold">
+                          <a href="https://dvimmigration.org/services/apply-now/?plan=visa-green-card-plan" target="_blank" rel="noopener noreferrer">Apply now</a>
+                        </button>
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+
+
+                <table className="min-w-[200px] w-[302px] bg-white bg-opacity-75 box-border h-[90%] relative flex flex-col custom-box-shadow items-center border border-collapse mt-[22px] border-[#F3F3F3] rounded-[16px]">
+                  <thead className="mt-[16px] w-full items-center justify-center flex header my-4 border border-l-0 border-r-0 border-t-0 h-full">
+                    <tr className="">
+                      <th><div className="whitespace-nowrap rounded-lg font-extrabold text-[22px] mt-3">
+                        <span className="text-[#00B894]"> Green</span> Card
+                      </div></th>
+                    </tr>
+                  </thead>
+                  <tbody className="flex flex-col -mt-3">
+                    <tr className="w-full font-bold items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        <img src="img/table/yes-icon.svg" alt="Yes" />
+                      </td>
+                    </tr>
+                    <tr className="w-full items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        For each
+                      </td>
+                    </tr>
+                    <tr className="w-full font-bold items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        Mixed
+                      </td>
+                    </tr>
+                    <tr className="w-full font-bold items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        <img src="img/table/yes-icon.svg" alt="Yes" />
+                      </td>
+                    </tr>
+                    <tr className="w-full font-bold items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        <div>Up to <span className="text-[#00B894]">25% cheaper</span></div>
+                      </td>
+                    </tr>
+                    <tr className="w-full font-bold items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        <img src="img/table/yes-icon.svg" alt="Yes" />
+                      </td>
+                    </tr>
+                    <tr className="w-full font-bold items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        Free
+                      </td>
+                    </tr>
+                    <tr className="w-full p-4 font-bold items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        Mixed
+                      </td>
+                    </tr>
+                    <tr className="w-full font-bold items-center justify-center flex flex-row">
+                      <td className="flex flex-row items-center">
+                        No
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot className="flex justify-center flex-col my-4 border -mt-[6px] w-full border-l-0 border-r-0 border-b-0">
+                    <tr className='h-full my-5 space-y-4'>
+                      <td className="text-[32px] font-bold justify-center flex h-full items-center">
+                        $29.99
+                      </td>
+                      <td className=" justify-center items-center flex">
+                        <button className="py-2 px-6 hover:bg-[#00B894]/80 active:bg-[#00B894]/50 font-bold hover:text-white bg-white text-black border border-[#00B894] rounded-[4px]">
+                          <a href="https://dvimmigration.org/services/apply-now/?plan=green-card" target="_blank" rel="noopener noreferrer">Apply now</a>
+                        </button>
+                      </td>
+                    </tr>
+                  </tfoot>
+
+                </table>
+
+              </div>
             </div>
-
           </div>
         </div>
         {/* apply now */}
