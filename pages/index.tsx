@@ -940,7 +940,7 @@ export default function Home() {
                       <img src="img/adv/Vector-4.svg" alt="Navigation Bar" className="h-[32px]" />
                       <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
                       <p className="leading-7 align-middle text-[16px] text-center">
-                        The right to study at a US university<br />without risk and up to 80% cheaper than<br />
+                        The right to study at a US university without risk and up to 80% cheaper than
                         without a Green Card
                       </p>
                     </div>
@@ -1024,12 +1024,12 @@ export default function Home() {
                 </div>
 
                 <div className='flex flex-row justify-between items-start w-full md:w-[302px]'>
-                  <div className="advantages-list flex flex-col items-center mx-2 w-full">
+                  <div className="advantages-list flex flex-col items-center mx-1 w-full">
                     <div className="flex items-center flex-col justify-center text-black w-full">
                       <img src="img/adv/Vector-8.svg" alt="Navigation Bar" className="h-[32px]" />
                       <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
                       <p className="leading-7 align-middle text-[16px] text-center">
-                        Family members (spouse and unmarried <br />children under 21) are automatically<br /> eligible for a Green Card as well
+                        Family members (spouse and unmarried children under 21) are automatically eligible for a Green Card as well
                       </p>
                     </div>
                   </div>
@@ -1041,7 +1041,7 @@ export default function Home() {
                       <img src="img/adv/Vector-9.svg" alt="Navigation Bar" className="h-[32px]" />
                       <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
                       <p className="leading-7 align-middle text-[16px] text-center">
-                        Application for US citizenship is possible<br /> after 3 or 5 years as a Green Card holder.
+                        Application for US citizenship is possible after 3 or 5 years as a Green Card holder.
                       </p>
                     </div>
                   </div>
@@ -1076,14 +1076,14 @@ export default function Home() {
         </div>
         <div className='compare-background-desktop '>
           <div className='content-container '>
-            <div className="faq-block p-4 relative">
-              <div className="text-[32px] my-4 font-extrabold leading-[48px] gap-4 flex-col item-start">
-                <span className="text-[#00B894] text-[32px] leading-[48px] font-extrabold ">Green</span> Card FAQ
+            <div className="faq-blockrelative py-16">
+              <div className="text-[32px] font-extrabold leading-[48px] gap-4 flex-col item-start mb-6">
+                <span className="text-[#00B894] text-[32px] leading-[48px] font-extrabold">Green</span> Card FAQ
               </div>
-              <img src="img/adv/pin.svg" alt="Navigation Bar" className="w-[149] h-[216px] absolute -top-[120px] right-0" />
-              <hr className="border flex-grow-0 border-[#F3F3F3] my-0"></hr>
-              <div className="flex justify-center items-center py-16">
-                <div className="mt-[32px] w-[628px]">
+              <img src="img/adv/pin.svg" alt="Navigation Bar" className="w-[149] h-[216px] absolute -top-[78px] right-[350px]" />
+              <hr className="border flex-grow-0 border-[#F3F3F3]"></hr>
+              <div className="flex justify-center items-center pt-16">
+                <div className="w-[628px]">
                   {faqs.map((faq) => (
                     <FAQ
                       key={faq.id}
