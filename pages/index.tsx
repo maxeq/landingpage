@@ -492,13 +492,13 @@ export default function Home() {
           <div className="statue-image-desktop absolute">
           </div>
           <div className="mt-[80px]">
-            <div className="flex flex-col px-20 gap-6">
+            <div className="flex flex-col gap-6">
               <h1 className="md:text-[40px] font-extrabold leading-[56px] items-start text-white">Get legal immigration <br></br> to the <span className="text-united">United</span> <span className="text-states">States</span> today</h1>
               <p className="text-[#FFFFFF] text-[18px] leading-[28px] font-light">We are helping thousands of people annually with obtaining their visas and <br></br> Green Cards to the United States legally.</p>
             </div>
           </div>
           {/* solutions */}
-          <div className="p-20">
+          <div className="py-20">
             <div className="cheapest-solutions border bg-white z-2 inline-flex flex-grow-0 flex-col rounded-lg p-12">
               <h2 className="font-extrabold font-[#333333] flex-grow-0 leading-[48px] text-[32px] text-black">The cheapest immigration Solution</h2>
               <div className="flex font-extrabold items-center justify-start my-2">
@@ -554,9 +554,9 @@ export default function Home() {
           </div>
 
 
-          <div className='compare-background-desktop'>
-            <div className='content-container'>
-              <div className="px-4 absolute compare-table flex flex-col item-start pt-14 compare-table-wrapper">
+          <div className='compare-background-desktop '>
+            <div className='content-container '>
+              <div className="absolute compare-table flex flex-col item-start pt-14 compare-table-wrapper">
                 <div className=""></div>
                 <div className="">
                   <p id="visevsgc" className="text-[24px] font-extrabold text-black"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
@@ -855,6 +855,7 @@ export default function Home() {
           </div>
         </div>
         {/* apply now */}
+        <div></div>
 
       </div >
     </main >
