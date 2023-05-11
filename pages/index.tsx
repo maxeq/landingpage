@@ -553,7 +553,7 @@ export default function Home() {
             </div>
           </div>
           <div className=''>
-            <div className="absolute compare-table flex flex-col item-start pt-14 compare-table-wrapper">
+            <div className="px-4 absolute compare-table flex flex-col item-start pt-14 compare-table-wrapper">
               <div className=""></div>
               <div className="">
                 <p id="visevsgc" className="text-[24px] font-extrabold text-black"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
@@ -563,7 +563,7 @@ export default function Home() {
           </div>
 
 
-          <div className="overflow-hidden mt-28 justify-evenly">
+          <div className="overflow-hidden mt-28 justify-between">
             <table className="flex flex-col">
               <tbody>
                 <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-[#0A31610D]">
