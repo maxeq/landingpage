@@ -375,6 +375,7 @@ export default function Home() {
           </Modal>
         </div>
       </div>
+
       <div className="faq-block p-4  md:hidden">
         <div className="text-[24px] my-4 font-extrabold leading-9 gap-4 flex-col item-start">
           <span className="text-[#00B894]">Green</span> Card FAQ
@@ -559,12 +560,12 @@ export default function Home() {
               <div className="absolute compare-table flex flex-col item-start pt-14 compare-table-wrapper">
                 <div className=""></div>
                 <div className="">
-                  <p id="visevsgc" className="text-[24px] font-extrabold text-black"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
+                  <p id="visevsgc" className="text-[32px] font-extrabold text-black"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
                   <p className="align-top py-3 ">Comparing the American visa and green card in all aspects of life will help you decide which option<br></br> suits you best.</p>
                 </div>
               </div>
             </div>
-            <div className="mt-28 justify-start content-container">
+            <div className="mt-28 justify-start content-container pb-14">
               <table className="flex flex-col">
                 <tbody>
                   <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-[#0A31610D]">
@@ -847,15 +848,210 @@ export default function Home() {
                       </td>
                     </tr>
                   </tfoot>
-
                 </table>
-
               </div>
             </div>
           </div>
         </div>
-        {/* apply now */}
-        <div></div>
+        {/* discover more desktop */}
+        <div className="advantages-block-desktop bg-[#F4F5F9]">
+          <div className='content-container'>
+            <div className="flex flex-col py-16">
+              <h4 id="about" className="text-[32px] leading-[48px] font-extrabold text-black">Discover more about <span className="text-[#00B894]">Green Card</span> advantages</h4>
+              <p className="text-[#595959] pt-1">Owning a US Green Card gives its holder nearly all rights equal of a US citizen.</p>
+            </div>
+
+
+            <div className='gap-6'>
+
+              <div className='flex flex-row justify-between items-start'>
+
+
+                <div className='flex flex-row justify-between items-start w-full md:w-[302px]'>
+                  <div className="advantages-list flex flex-col items-center mx-2 w-full">
+                    <div className="flex items-center flex-col justify-center text-black w-full">
+                      <img src="img/adv/Vector.svg" alt="Navigation Bar" className="h-[32px]" />
+                      <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
+                      <p className="leading-7 align-middle text-[16px] text-center">
+                        Unlimited residency
+                        <br />
+                        in the United States of America
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div className='flex flex-row justify-between items-start w-full md:w-[302px]'>
+                  <div className="advantages-list flex flex-col items-center mx-2 w-full">
+                    <div className="flex items-center flex-col justify-center text-black w-full">
+                      <img src="img/adv/Vector-1.svg" alt="Navigation Bar" className="h-[32px]" />
+                      <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
+                      <p className="leading-7 align-middle text-[16px] text-center">
+                        Unlimited work permit
+                        <br />
+                        in the United States of America
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className='flex flex-row justify-between items-start w-full md:w-[302px]'>
+                  <div className="advantages-list flex flex-col items-center mx-2 w-full">
+                    <div className="flex items-center flex-col justify-center text-black w-full">
+                      <img src="img/adv/Vector-2.svg" alt="Navigation Bar" className="h-[32px]" />
+                      <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
+                      <p className="leading-7 align-middle text-[16px] text-center">
+                        Unlimited and easy entry and exit
+                        <br />
+                        without a Visa or ESTA
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className='flex flex-row justify-between items-start w-full md:w-[302px]'>
+                  <div className="advantages-list flex flex-col items-center mx-2 w-full">
+                    <div className="flex items-center flex-col justify-center text-black w-full">
+                      <img src="img/adv/Vector-3.svg" alt="Navigation Bar" className="h-[32px]" />
+                      <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
+                      <p className="leading-7 align-middle text-[16px] text-center">
+                        Eligibility for Medicare benefits
+                        <br />
+                        and other government assistance
+                        <br />
+                        after 5 years as a Green Card holder
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div className='gap-6 py-16'>
+
+              <div className='flex flex-row justify-between'>
+
+                <div className='flex flex-row justify-between items-start w-full md:w-[302px]'>
+                  <div className="advantages-list flex flex-col items-center mx-2 w-full">
+                    <div className="flex items-center flex-col justify-center text-black w-full">
+                      <img src="img/adv/Vector-4.svg" alt="Navigation Bar" className="h-[32px]" />
+                      <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
+                      <p className="leading-7 align-middle text-[16px] text-center">
+                        The right to study at a US university<br />without risk and up to 80% cheaper than<br />
+                        without a Green Card
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className='flex flex-row justify-between items-start w-full md:w-[302px]'>
+                  <div className="advantages-list flex flex-col items-center mx-2 w-full">
+                    <div className="flex items-center flex-col justify-center text-black w-full">
+                      <img src="img/adv/Vector-5.svg" alt="Navigation Bar" className="h-[32px]" />
+                      <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
+                      <p className="leading-7 align-middle text-[16px] text-center">
+                        The possibility of<br />
+                        federal loans for students
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-white flex flex-row items-center gap-4 py-4 px-8 my-4 mx-4 rounded-lg justify-center box-shadow-compare max-w-[628px]">
+                  <p className="items-center justify-center flex w-full">Learn more about the green card by watching the video about the benefits and comparison of the green card with a US visa.</p>
+                  <img src="img/adv/video.svg" alt="Navigation Bar" onClick={toggleModal} style={{ cursor: 'pointer' }} />
+                  <Modal
+                    isOpen={isModalOpen}
+                    onRequestClose={toggleModal}
+                    contentLabel="Video Modal"
+                    className="your-modal-class"
+                    overlayClassName="your-overlay-class"
+                  >
+                    <iframe
+                      width="500"
+                      height="500"
+                      src="https://www.youtube.com/embed/z1R395afUeY"
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                    <button
+                      className="absolute top-0 right-0 p-2 focus:outline-none"
+                      onClick={toggleModal}
+                    >
+                      <img
+                        src="img/closebutton.svg"
+                        alt="Close"
+                        className="w-6 h-6 text-white fill-current"
+                      />
+                    </button>
+                  </Modal>
+                </div>
+              </div>
+            </div>
+
+            <div className='gap-6 pb-16'>
+              <div className='flex flex-row justify-between'>
+
+
+                <div className='flex flex-row justify-between items-start w-full md:w-[302px]'>
+                  <div className="advantages-list flex flex-col items-center mx-2 w-full">
+                    <div className="flex items-center flex-col justify-center text-black w-full">
+                      <img src="img/adv/Vector-6.svg" alt="Navigation Bar" className="h-[32px]" />
+                      <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
+                      <p className="leading-7 align-middle text-[16px] text-center">
+                        Crisis security:<br />
+                        Green Card holders are usually<br />
+                        not affected by travel embargoes
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className='flex flex-row justify-between items-start w-full md:w-[302px]'>
+                  <div className="advantages-list flex flex-col items-center mx-2 w-full">
+                    <div className="flex items-center flex-col justify-center text-black w-full">
+                      <img src="img/adv/Vector-7.svg" alt="Navigation Bar" className="h-[32px]" />
+                      <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
+                      <p className="leading-7 align-middle text-[16px] text-center">
+                        Uncomplicated obtaining of business<br />
+                        and commercial licenses
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className='flex flex-row justify-between items-start w-full md:w-[302px]'>
+                  <div className="advantages-list flex flex-col items-center mx-2 w-full">
+                    <div className="flex items-center flex-col justify-center text-black w-full">
+                      <img src="img/adv/Vector-8.svg" alt="Navigation Bar" className="h-[32px]" />
+                      <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
+                      <p className="leading-7 align-middle text-[16px] text-center">
+                        Family members (spouse and unmarried <br />children under 21) are automatically<br /> eligible for a Green Card as well
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className='flex flex-row justify-between items-start w-full md:w-[302px]'>
+                  <div className="advantages-list flex flex-col items-center mx-2 w-full">
+                    <div className="flex items-center flex-col justify-center text-black w-full">
+                      <img src="img/adv/Vector-9.svg" alt="Navigation Bar" className="h-[32px]" />
+                      <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
+                      <p className="leading-7 align-middle text-[16px] text-center">
+                        Application for US citizenship is possible<br /> after 3 or 5 years as a Green Card holder.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
 
       </div >
     </main >
