@@ -1048,10 +1048,58 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-
           </div>
         </div>
+
+        <div className='sale-line-bg'>
+          <div className='content-container gap-2 py-16 text-white'>
+            <div>
+              <h3 className='text-[32px] font-extrabold leading-[48px]'>The cheapest immigration Solution</h3>
+              <p className='font-extralight'>Check your eligibility to live, work and study in the United States today!</p>
+            </div>
+            <div className="flex flex-row align-middle text-center just items-center py-2">
+              <div className="text-white opacity-50 text-[22px] leading-[32px] py-2 mr-4 text-lg strikethrough">
+                $199.99
+              </div>
+              <div className="py-1 text-[32px] font-extrabold">
+                $29.99
+              </div>
+            </div>
+            <div className="mt-4">
+              <button className="border rounded-[4px] px-6 py-2 hover:bg-white/20"><a href="https://dvimmigration.org/services/apply-now/?plan=visa-green-card-plan" target="_blank" rel="noopener noreferrer">Apply now</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div>
+
+        </div>
+        <div className='compare-background-desktop '>
+          <div className='content-container '>
+            <div className="faq-block p-4 relative">
+              <div className="text-[32px] my-4 font-extrabold leading-[48px] gap-4 flex-col item-start">
+                <span className="text-[#00B894] text-[32px] leading-[48px] font-extrabold ">Green</span> Card FAQ
+              </div>
+              <img src="img/adv/pin.svg" alt="Navigation Bar" className="w-[149] h-[216px] absolute -top-[120px] right-0" />
+              <hr className="border flex-grow-0 border-[#F3F3F3] my-0"></hr>
+              <div className="flex justify-center items-center py-16">
+                <div className="mt-[32px] w-[628px]">
+                  {faqs.map((faq) => (
+                    <FAQ
+                      key={faq.id}
+                      id={faq.id}
+                      activeId={activeId}
+                      question={faq.question}
+                      answer={faq.answer}
+                      setActiveId={setActiveId}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div >
+
 
       </div >
     </main >

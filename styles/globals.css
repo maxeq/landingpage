@@ -165,8 +165,27 @@ tr:hover {
   background-size: cover;
 }
 
-.compare-background-desktop::before {
-opacity: 50%;
+.sale-line-bg {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw; 
+  background: url('/img/salline.jpg') no-repeat center center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.sale-line-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left:0; 
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: -1;
 }
 
 .advantages-block-desktop {
