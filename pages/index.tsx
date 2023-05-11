@@ -563,7 +563,7 @@ export default function Home() {
           </div>
 
 
-          <div className="mt-28 justify-start overflow-auto">
+          <div className="mt-28 justify-start">
             <table className="flex flex-col">
               <tbody>
                 <tr className="py-4 px-4 font-bold items-center justify-between flex flex-row bg-[#0A31610D]">
@@ -627,10 +627,9 @@ export default function Home() {
 
 
 
-            <div className="flex flex-row gap-6 flex-wrap -mt-[719px] justify-center z-20 absolute ml-56 overflow-auto">
+            <div className="flex flex-row gap-6 -mt-[719px] justify-center z-20 ml-56 overflow-x-auto">
 
-
-              <table className="w-[302px] bg-white bg-opacity-75 box-border h-[90%] relative flex flex-col custom-box-shadow items-center border border-collapse mt-[22px] border-[#F3F3F3] rounded-[16px] overflow-auto">
+              <table className="min-w-[200px] w-[302px] bg-white bg-opacity-75 box-border h-[90%] relative flex flex-col custom-box-shadow items-center border border-collapse mt-[22px] border-[#F3F3F3] rounded-[16px]">
                 <thead className="mt-[16px] w-full items-center justify-center flex header my-4 border border-l-0 border-r-0 border-t-0 h-full">
                   <tr className="">
                     <th><div className="whitespace-nowrap rounded-lg font-extrabold text-[22px] mt-3">
@@ -659,9 +658,9 @@ export default function Home() {
                       <img src="img/table/no-icon.svg" alt="No" />
                     </td>
                   </tr>
-                  <tr className="w-fullitems-center justify-center flex flex-row">
+                  <tr className="w-full items-center justify-center flex flex-row">
                     <td className="flex flex-row items-center">
-                      <div>Up to <span className="text-[#00B894]">High fees</span></div>
+                      <div>High fees</div>
                     </td>
                   </tr>
                   <tr className="w-full font-bold items-center justify-center flex flex-row">
@@ -703,7 +702,7 @@ export default function Home() {
 
 
 
-              <table className="w-[302px] box-shadow-compare bg-white bg-opacity-75 box-border h-[90%] relative flex flex-col custom-box-shadow items-center border border-collapse border-[#00B894] rounded-[16px]  overflow-auto">
+              <table className="min-w-[302px] box-shadow-compare bg-white bg-opacity-75 box-border h-[90%] relative flex flex-col custom-box-shadow items-center border border-collapse border-[#00B894] rounded-[16px]">
                 <thead className="mt-[38px] w-full items-center justify-center flex header my-4 border border-l-0 border-r-0 border-t-0 h-full">
                   <tr className="">
                     <th><div className="whitespace-nowrap rounded-lg font-extrabold text-[26px]">
@@ -780,7 +779,7 @@ export default function Home() {
               </table>
 
 
-              <table className="w-[302px] bg-white bg-opacity-75 box-border h-[90%] relative flex flex-col custom-box-shadow items-center border border-collapse mt-[22px] border-[#F3F3F3] rounded-[16px] overflow-auto">
+              <table className="min-w-[200px] w-[302px] bg-white bg-opacity-75 box-border h-[90%] relative flex flex-col custom-box-shadow items-center border border-collapse mt-[22px] border-[#F3F3F3] rounded-[16px]">
                 <thead className="mt-[16px] w-full items-center justify-center flex header my-4 border border-l-0 border-r-0 border-t-0 h-full">
                   <tr className="">
                     <th><div className="whitespace-nowrap rounded-lg font-extrabold text-[22px] mt-3">
