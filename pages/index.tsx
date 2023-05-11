@@ -192,8 +192,8 @@ export default function Home() {
               <p className="text-[12px] ">More than 25 combine years of experience.</p>
               <hr className="border-1 flex border-[#F3F3F3] my-0"></hr>
               <div className="font-bold">
-                <h4 className="mb-1 text-black  flex-col flex">Suitable for:</h4>
-                <ul className="list-none font-normal list-inside flex p-0 align-start gap-1flex-col">
+                <h4 className="mb-1 text-black">Suitable for:</h4>
+                <ul className="list-none font-normal list-inside flex p-0 flex-row align-start gap-1 flex-grow-0 flex-none">
                   <ul>
                     <li className="flex gap-2">
                       <img src="img/dot.svg" alt="bullet" />
