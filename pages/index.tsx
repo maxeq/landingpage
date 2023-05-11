@@ -232,7 +232,7 @@ export default function Home() {
         <SliderTemp />
       </div>
       {/* discover more about green card advantages */}
-      <div className="advantages-block bg-[#F4F5F9] py-[32px] hidden md:block">
+      <div className="advantages-block bg-[#F4F5F9] py-[32px] md:hidden">
         <div className="flex flex-col items-center self-stretch mx-4">
           <h4 id="about" className="text-[24px] leading-[36px] font-extrabold text-black">Discover more about <span className="text-[#00B894]">Green Card</span> advantages</h4>
           <p className="text-[#595959] pt-1">Owning a US Green Card gives its holder nearly all rights equal of a US citizen.</p>
@@ -376,7 +376,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="faq-block p-4">
+      <div className="faq-block p-4  md:hidden">
         <div className="text-[24px] my-4 font-extrabold leading-9 gap-4 flex-col item-start">
           <span className="text-[#00B894]">Green</span> Card FAQ
         </div>
@@ -396,7 +396,7 @@ export default function Home() {
         </div>
       </div>
       {/* form */}
-      <div className="form-block py-8 px-4 flex flex-col">
+      <div className="form-block py-8 px-4 flex flex-col  md:hidden">
         <div
           className="font-extrabold text-[24px] leading-9 text-[#333333]"
         >
@@ -704,7 +704,7 @@ export default function Home() {
 
 
 
-                <table className="hidden min-w-[302px] box-shadow-compare bg-white bg-opacity-75 box-border h-[90%] relative flex flex-col custom-box-shadow items-center border border-collapse border-[#00B894] rounded-[16px]">
+                <table className="min-w-[302px] box-shadow-compare bg-white bg-opacity-75 box-border h-[90%] relative flex flex-col custom-box-shadow items-center border border-collapse border-[#00B894] rounded-[16px]">
                   <thead className="mt-[38px] w-full items-center justify-center flex header my-4 border border-l-0 border-r-0 border-t-0 h-full">
                     <tr className="">
                       <th><div className="whitespace-nowrap rounded-lg font-extrabold text-[26px]">
@@ -854,7 +854,7 @@ export default function Home() {
           </div>
         </div>
         {/* discover more desktop */}
-        <div className="advantages-block-desktop bg-[#F4F5F9] hidden">
+        <div className="advantages-block-desktop bg-[#F4F5F9]  hidden md:block">
           <div className='content-container'>
             <div className="flex flex-col py-16">
               <h4 id="about" className="text-[32px] leading-[48px] font-extrabold text-black">Discover more about <span className="text-[#00B894]">Green Card</span> advantages</h4>
@@ -940,7 +940,7 @@ export default function Home() {
                       <img src="img/adv/Vector-4.svg" alt="Navigation Bar" className="h-[32px]" />
                       <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
                       <p className="leading-7 align-middle text-[16px] text-center">
-                        The right to study at a US university without risk and up to 80% cheaper than
+                        The right to study at a US university<br />without risk and up to 80% cheaper than<br />
                         without a Green Card
                       </p>
                     </div>
@@ -1024,7 +1024,7 @@ export default function Home() {
                 </div>
 
                 <div className='flex flex-row justify-between items-start w-full md:w-[302px]'>
-                  <div className="advantages-list flex flex-col items-center mx-1 w-full">
+                  <div className="advantages-list flex flex-col items-center mx-2 w-full">
                     <div className="flex items-center flex-col justify-center text-black w-full">
                       <img src="img/adv/Vector-8.svg" alt="Navigation Bar" className="h-[32px]" />
                       <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
@@ -1051,7 +1051,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='sale-line-bg hidden md:block'>
+        <div className='sale-line-bg  hidden md:block'>
           <div className='content-container gap-2 py-16 text-white'>
             <div>
               <h3 className='text-[32px] font-extrabold leading-[48px]'>The cheapest immigration Solution</h3>
