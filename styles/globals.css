@@ -106,17 +106,19 @@ tr:hover {
 }
 
 .statue-image-desktop {
-  background-image: url('/img/statue-back.png');
+  background-image: url('/img/sta.png');
   height: 900px;
-  padding-bottom: 112px;
-  left: 0px;
-  top: 0px;
-  width: 100%;
+  top: 0;
+  left:0; 
+  right: 0;
+  width: 100%; /* Use viewport width instead of a fixed width */
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: contain; /* Change from cover to contain */
+  background-size: auto 100%; /* Stretch the image horizontally */
   z-index: -1;
 }
+
 
 .content-container {
   max-width: 1440px;
