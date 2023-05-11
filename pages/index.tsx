@@ -494,7 +494,7 @@ export default function Home() {
           <div className="mt-[80px]">
             <div className="flex flex-col gap-6">
               <h1 className="md:text-[40px] font-extrabold leading-[56px] items-start text-white">Get legal immigration <br></br> to the <span className="text-united">United</span> <span className="text-states">States</span> today</h1>
-              <p className="text-[#FFFFFF] text-[18px] leading-[28px] font-light">We are helping thousands of people annually with obtaining their visas and <br></br> Green Cards to the United States legally.</p>
+              <p className="text-[#FFFFFF] text-[18px] leading-[28px] font-light text-shadow">We are helping thousands of people annually with obtaining their visas and <br></br> Green Cards to the United States legally.</p>
             </div>
           </div>
           {/* solutions */}

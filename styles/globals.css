@@ -128,6 +128,9 @@ tr:hover {
   padding-right: 80px;
 }
 
+.text-shadow {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1) !important;
+}
 
 .statue-image-desktop::before {
   content: '';
@@ -137,7 +140,7 @@ tr:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .compare-background {
