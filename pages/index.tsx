@@ -132,7 +132,7 @@ export default function Home() {
               </nav>
             )}
             <nav className="desktop-nav md:h-[112px] hidden md:flex justify-between items-center py-4 px-20">
-              <div className="flex items-center flex-shrink-0">
+              <div className="flex items-start flex-shrink-0">
                 <img src="img/logo.png" alt="Brand Logo" className="logo-image min-w-max md:w-[108.99px] md:h-[80px] object-contain" />
               </div>
               <div className="flex items-center gap-8 whitespace-nowrap">
