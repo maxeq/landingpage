@@ -538,7 +538,7 @@ export default function Home() {
                     <Link to="visevsgcxz"
                       smooth={true}
                       duration={500}
-                      className="border hover:border-[#00B894]/80 hover:bg-[#00B894]/80 hover:text-white active:border-[#00B894]/50 border-[#00B894] rounded-[6px] px-6 py-2 hover:text-black">
+                      className="border cursor-pointer hover:border-[#00B894]/80 hover:bg-[#00B894]/80 hover:text-white active:border-[#00B894]/50 border-[#00B894] rounded-[6px] px-6 py-2 hover:text-black">
                       More options
                     </Link>
                   </div>
