@@ -1099,9 +1099,110 @@ export default function Home() {
             </div>
           </div>
         </div >
-
-
       </div >
+
+      {/* have any questions desktop */}
+      <div className='bg-[#F4F5F9] hidden md:block'>
+        <div className='content-container flex flex-row py-16 gap-28'>
+          <div className="lg:flex lg:flex-col">
+            <div className='max-w-[557px] min-w-[300px] w-full justify-evenly flex flex-col'>
+              <h3 className='text-[26px] leading-[40px] font-extrabold'><span className='text-[#00B894]'>Have any questions</span> or<br></br> looking for the best US Visa consulting?</h3>
+              <p className='text-[14px] leading-[26px] text-[#595959]'>With more than 25 combine years of experience we are your best immigration solution.</p>
+              <p className='text-[14px] leading-[26px] text-[#595959]'>Leave your details and one of our immigration experts will get touch with you yo answer!</p>
+            </div>
+            <div className="flex-wrap flex">
+              <form className="space-y-4" onSubmit={handleSubmit}>
+                <div className="flex flex-row gap-4 justify-between">
+                  <div className="relative flex flex-col w-full">
+                    <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
+                    <input type="text" placeholder="Full Name" id="name" name="name" className="border placeholder-[#C8C8C8] border-[#E9E9E9] rounded-[4px] py-2 px-4 focus:ring-green-400 focus:border-[#00B894] outline-none" />
+                  </div>
+                  <div className="relative flex flex-col w-full">
+                    <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
+                    <input type="email" id="email" placeholder="E-mail" name="email" className="border placeholder-[#C8C8C8] border-[#E9E9E9] rounded-[4px] p-2 px-4 focus:ring-green-400 focus:border-[#00B894] outline-none" />
+                  </div>
+                </div>
+                <div className="flex flex-row gap-4 justify-between">
+                  <div className="relative flex flex-col w-full">
+                    <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
+                    <input type="tel" id="phone" placeholder="Phone number" name="phone" className="border border-[#E9E9E9] rounded-[4px] p-2 px-4  placeholder-[#C8C8C8] focus:ring-green-400 focus:border-[#00B894] outline-none" />
+                  </div>
+                  <div className="relative flex flex-col w-full">
+                    <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
+                    <input type="question" id="question" placeholder="Type your question here" name="question" className="border border-[#E9E9E9] rounded-[4px] p-2 px-4  placeholder-[#C8C8C8] focus:ring-green-400 focus:border-[#00B894] outline-none" />
+                  </div>
+                </div>
+                <div className="flex flex-col">
+                  <button type="submit" disabled={isSubmitting} className="bg-[#00B894] text-white rounded-[4px] py-2 px-4 font-bold hover:bg-[#00B894]/80 active:bg-[#00B894]/50">Contact us</button>
+                  <div className="h-6">
+                    {status && (
+                      <p className="text-green-600">
+                        {status}
+                      </p>
+                    )}
+                  </div>
+                  <div className="text-[#909090] text-[12px] leading-[18px] font-[200]">
+                    By clicking the "contact us" button you agree to our <a className="text-[#00B894] font-normal" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/terms-and-conditions/">Terms and Conditions</a> and acknowledge that your information will be handled as detailed in our <a className="text-[#00B894] font-normal" target="_blank" rel="noopener noreferrer" href=" https://dvimmigration.org/privacy-policy/">Privacy Policy</a> You acknowledge that in order to continue the process our representative will contact you.
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* footer desktp */}
+      <div className='md:block hidden footer-block py-16 flex-col '>
+        <div className="content-container">
+          <div className='flex flex-row text-white justify-between w-full'>
+            <div className='justify-center w-full max-w-[302px]'>
+              <img src="img/dvlogo.png" alt="Brand Logo" className="h-full w-full" />
+            </div>
+            <div className="space-y-2">
+              <div id="contacts" className="font-bold text-[18px] mb-8">Contacts</div>
+              <div className="flex gap-6 items-start">
+                <div className="flex font-[200]"><img src="img/adv/Vector-12.svg" alt="Call" className="mr-2 font-[200]" />Call:</div>
+                <div className='font-bold'> +13473913730</div>
+              </div>
+              <div className="flex gap-6 items-start">
+                <div className="flex font-[200]"><img src="img/adv/Vector-13.svg" alt="Call" className="mr-2 font-[200]" />E-Mail:</div>
+                <div className='font-bold'>support@dvimmigration.org</div>
+              </div>
+              <div className="flex gap-6 items-start">
+                <div className="flex font-[200]"><img src="img/adv/Vector-14.svg" alt="Address" className="mr-2 font-[200]" />Address:</div>
+                <div className='font-bold'>Katalanou, 1, 1st floor, office 101,<br></br> Aglantzia, 2121, Nicosia, Cyprus</div>
+              </div>
+            </div>
+            <div>
+              <div className="text-[18px] mb-8 font-bold">More</div>
+              <div className="flex flex-col gap-2">
+                <a className=" font-[200] leading-[22px]" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/privacy-policy/">
+                  Privacy Policy
+                </a>
+                <a className=" font-[200] leading-[22px]" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/terms-and-conditions/">
+                  Terms and Conditions
+                </a>
+                <div className="flex gap-5 mt-8 mr-8">
+                  <img src="img/adv/Vector-15.svg" alt="Address" className="mr-2" />
+                  <img src="img/visa.svg" alt="Address" className="mr-2" />
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div className='flex flex-col text-white'>
+            <div className="py-4 mb-4"><hr className="border-[#FFFFFF1A]"></hr></div>
+            <div className='flex justify-between'>
+              <div className="text-[14px] font-[200]">We are not affiliated with the US government or embassy</div>
+              <div className="text-[14px] flex-row flex">
+                <img src="img/c.svg" alt="Address" className="mr-1 flex justify-center align-middle items-center" />
+                <div className="text-[14px] font-[200]">DV Immigration, 2023</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </main >
 
   )
