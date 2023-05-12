@@ -1102,8 +1102,8 @@ export default function Home() {
       </div >
 
       {/* have any questions desktop */}
-      <div className='bg-[#F4F5F9] hidden md:block'>
-        <div className='content-container flex flex-row py-16 gap-28'>
+      <div className='bg-[#F4F5F9] hidden md:block lg:block'>
+        <div className='content-container flex lg:flex-row md:flex-col py-16 md:gap-5 lg:gap-28'>
           <div className='max-w-[557px] min-w-[300px] w-full justify-evenly flex flex-col'>
             <h3 className='text-[26px] leading-[40px] font-extrabold'><span className='text-[#00B894]'>Have any questions</span> or<br></br> looking for the best US Visa consulting?</h3>
             <p className='text-[14px] leading-[26px] text-[#595959]'>With more than 25 combine years of experience we are your best immigration solution.</p>
@@ -1153,9 +1153,9 @@ export default function Home() {
         <div className="content-container">
           <div className='flex flex-row text-white justify-between w-full'>
             <div className='justify-center w-full max-w-[302px]'>
-              <img src="img/dvlogo.png" alt="Brand Logo" className="h-full w-full" />
+              <img src="img/dvlogo.png" alt="Brand Logo" className="" />
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2 mx-5">
               <div id="contacts" className="font-bold text-[18px] mb-8">Contacts</div>
               <div className="flex gap-6 items-start">
                 <div className="flex font-[200]"><img src="img/adv/Vector-12.svg" alt="Call" className="mr-2 font-[200]" />Call:</div>
