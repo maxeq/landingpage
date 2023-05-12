@@ -879,14 +879,11 @@ export default function Home() {
 
 
             <div className='gap-6'>
-
               <div className='flex flex-row justify-between items-start'>
-
-
                 <div className='flex flex-row justify-between items-start w-full md:w-[302px]'>
                   <div className="advantages-list flex flex-col items-center mx-2 w-full">
                     <div className="flex items-center flex-col justify-center text-black w-full">
-                      <img src="img/adv/Vector.svg" alt="Navigation Bar" className="h-[32px]" />
+                      <img src="img/adv/Vector.svg" alt="Residency" className="h-[32px]" />
                       <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
                       <p className="leading-7 align-middle text-[16px] text-center">
                         Unlimited residency
@@ -902,7 +899,7 @@ export default function Home() {
                 <div className='flex flex-row justify-between items-start w-full md:w-[302px]'>
                   <div className="advantages-list flex flex-col items-center mx-2 w-full">
                     <div className="flex items-center flex-col justify-center text-black w-full">
-                      <img src="img/adv/Vector-1.svg" alt="Navigation Bar" className="h-[32px]" />
+                      <img src="img/adv/Vector-1.svg" alt="Work permit" className="h-[32px]" />
                       <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
                       <p className="leading-7 align-middle text-[16px] text-center">
                         Unlimited work permit
@@ -916,7 +913,7 @@ export default function Home() {
                 <div className='flex flex-row justify-between items-start w-full md:w-[302px]'>
                   <div className="advantages-list flex flex-col items-center mx-2 w-full">
                     <div className="flex items-center flex-col justify-center text-black w-full">
-                      <img src="img/adv/Vector-2.svg" alt="Navigation Bar" className="h-[32px]" />
+                      <img src="img/adv/Vector-2.svg" alt="Unlimited visits" className="h-[32px]" />
                       <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
                       <p className="leading-7 align-middle text-[16px] text-center">
                         Unlimited and easy entry and exit
@@ -930,7 +927,7 @@ export default function Home() {
                 <div className='flex flex-row justify-between items-start w-full md:w-[302px]'>
                   <div className="advantages-list flex flex-col items-center mx-2 w-full">
                     <div className="flex items-center flex-col justify-center text-black w-full">
-                      <img src="img/adv/Vector-3.svg" alt="Navigation Bar" className="h-[32px]" />
+                      <img src="img/adv/Vector-3.svg" alt="Medicare benefits" className="h-[32px]" />
                       <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
                       <p className="leading-7 align-middle text-[16px] text-center">
                         Eligibility for Medicare benefits
@@ -953,7 +950,7 @@ export default function Home() {
                 <div className='flex flex-row justify-between items-start w-full md:w-[302px]'>
                   <div className="advantages-list flex flex-col items-center mx-2 w-full">
                     <div className="flex items-center flex-col justify-center text-black w-full">
-                      <img src="img/adv/Vector-4.svg" alt="Navigation Bar" className="h-[32px]" />
+                      <img src="img/adv/Vector-4.svg" alt="Rights to study" className="h-[32px]" />
                       <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
                       <p className="leading-7 align-middle text-[16px] text-center">
                         The right to study at a US university<br />without risk and up to 80% cheaper than<br />
@@ -965,7 +962,7 @@ export default function Home() {
                 <div className='flex flex-row justify-between items-start w-full md:w-[302px]'>
                   <div className="advantages-list flex flex-col items-center mx-2 w-full">
                     <div className="flex items-center flex-col justify-center text-black w-full">
-                      <img src="img/adv/Vector-5.svg" alt="Navigation Bar" className="h-[32px]" />
+                      <img src="img/adv/Vector-5.svg" alt="Loans" className="h-[32px]" />
                       <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
                       <p className="leading-7 align-middle text-[16px] text-center">
                         The possibility of<br />
@@ -1015,7 +1012,7 @@ export default function Home() {
                 <div className='flex flex-row justify-between items-start w-full md:w-[302px]'>
                   <div className="advantages-list flex flex-col items-center mx-2 w-full">
                     <div className="flex items-center flex-col justify-center text-black w-full">
-                      <img src="img/adv/Vector-6.svg" alt="Navigation Bar" className="h-[32px]" />
+                      <img src="img/adv/Vector-6.svg" alt="Security" className="h-[32px]" />
                       <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
                       <p className="leading-7 align-middle text-[16px] text-center">
                         Crisis security:<br />
@@ -1029,7 +1026,7 @@ export default function Home() {
                 <div className='flex flex-row justify-between items-start w-full md:w-[302px]'>
                   <div className="advantages-list flex flex-col items-center mx-2 w-full">
                     <div className="flex items-center flex-col justify-center text-black w-full">
-                      <img src="img/adv/Vector-7.svg" alt="Navigation Bar" className="h-[32px]" />
+                      <img src="img/adv/Vector-7.svg" alt="Business" className="h-[32px]" />
                       <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
                       <p className="leading-7 align-middle text-[16px] text-center">
                         Uncomplicated obtaining of business<br />
@@ -1042,7 +1039,7 @@ export default function Home() {
                 <div className='flex flex-row justify-between items-start w-full md:w-[302px]'>
                   <div className="advantages-list flex flex-col items-center mx-2 w-full">
                     <div className="flex items-center flex-col justify-center text-black w-full">
-                      <img src="img/adv/Vector-8.svg" alt="Navigation Bar" className="h-[32px]" />
+                      <img src="img/adv/Vector-8.svg" alt="Reunion" className="h-[32px]" />
                       <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
                       <p className="leading-7 align-middle text-[16px] text-center">
                         Family members (spouse and unmarried children under 21) are automatically eligible for a Green Card as well
@@ -1054,7 +1051,7 @@ export default function Home() {
                 <div className='flex flex-row justify-between items-start w-full md:w-[302px]'>
                   <div className="advantages-list flex flex-col items-center mx-2 w-full">
                     <div className="flex items-center flex-col justify-center text-black w-full">
-                      <img src="img/adv/Vector-9.svg" alt="Navigation Bar" className="h-[32px]" />
+                      <img src="img/adv/Vector-9.svg" alt="Citizenship" className="h-[32px]" />
                       <hr className="border-[#E9E9E9] my-4 w-full max-w-[302px]"></hr>
                       <p className="leading-7 align-middle text-[16px] text-center">
                         Application for US citizenship is possible after 3 or 5 years as a Green Card holder.
