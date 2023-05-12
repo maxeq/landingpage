@@ -159,7 +159,7 @@ export default function Home() {
           {/* h1 with desc */}
           <div className="gap-1">
             <h1 className="md:text-[40px] font-extrabold text-28px leading-42px items-start text-white">Get legal immigration to the <span className="text-united">United</span> <span className="text-states">States</span> today</h1>
-            <p className="text-[#FFFFFF] leading-[26px] font-extralight">We are helping thousands of people annually with obtaining their visas and Green Cards to the United States legally.</p>
+            <p className="text-[#FFFFFF] leading-[26px] font-extralight text-shadow">We are helping thousands of people annually with obtaining their visas and Green Cards to the United States legally.</p>
           </div>
           {/* h1 with desc */}
           <div className="cheapest-solutions mt-9 border bg-white z-2 flex flex-grow-0 flex-col rounded-lg p-4">
@@ -516,7 +516,7 @@ export default function Home() {
                 <div className='gap-4 item-start flex flex-col mr-12'>
                   <h3 className="font-medium text-[16px] text-[#333333]">Check your eligibility to live, work and study in the <br></br> <span className="text-united font-extrabold">United</span> <span className="text-states font-extrabold">States</span> today!</h3>
                   <div className="flex font-bold leading-[26px]">
-                    <button className="bg-[#00B894] hover:bg-[#00B894]/80 active:bg-[#00B894]/50 border border-[#00B894] text-white border rounded-[6px] px-6 py-2 mr-4">
+                    <button className="bg-[#00B894] hover:bg-[#00B894]/80 active:bg-[#00B894]/50 border-[#00B894] text-white border rounded-[6px] px-6 py-2 mr-4">
                       <a href="https://dvimmigration.org/services/apply-now/" target="_blank" rel="noopener noreferrer">Apply Now</a>
                     </button>
                     <Link to="visevsgc"
@@ -736,7 +736,7 @@ export default function Home() {
                     </tr>
                     <tr className="w-full font-bold items-center justify-center flex flex-row">
                       <td className="flex flex-row items-center">
-                        <div>Up to <span className="text-[#00B894]">80% cheaper</span></div>
+                        <div>Up to <span className="text-[#00B894]">85% cheaper</span></div>
                       </td>
                     </tr>
                     <tr className="w-full font-bold items-center justify-center flex flex-row">
