@@ -1080,7 +1080,7 @@ export default function Home() {
               <div className="text-[32px] font-extrabold leading-[48px] gap-4 flex-col item-start mb-6">
                 <span className="text-[#00B894] text-[32px] leading-[48px] font-extrabold">Green</span> Card FAQ
               </div>
-              <img src="img/adv/pin.svg" alt="Navigation Bar" className="w-[149] h-[216px] absolute -top-[78px] right-[350px]" />
+              <img src="img/adv/pin.svg" alt="Navigation Bar" className="w-[149] h-[216px] absolute -top-[78px] right-[150px]" />
               <hr className="border flex-grow-0 border-[#F3F3F3]"></hr>
               <div className="flex justify-center items-center pt-16">
                 <div className="w-[628px]">
