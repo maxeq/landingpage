@@ -1104,49 +1104,47 @@ export default function Home() {
       {/* have any questions desktop */}
       <div className='bg-[#F4F5F9] hidden md:block'>
         <div className='content-container flex flex-row py-16 gap-28'>
-          <div className="lg:flex lg:flex-col">
-            <div className='max-w-[557px] min-w-[300px] w-full justify-evenly flex flex-col'>
-              <h3 className='text-[26px] leading-[40px] font-extrabold'><span className='text-[#00B894]'>Have any questions</span> or<br></br> looking for the best US Visa consulting?</h3>
-              <p className='text-[14px] leading-[26px] text-[#595959]'>With more than 25 combine years of experience we are your best immigration solution.</p>
-              <p className='text-[14px] leading-[26px] text-[#595959]'>Leave your details and one of our immigration experts will get touch with you yo answer!</p>
-            </div>
-            <div className="flex-wrap flex">
-              <form className="space-y-4" onSubmit={handleSubmit}>
-                <div className="flex flex-row gap-4 justify-between">
-                  <div className="relative flex flex-col w-full">
-                    <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
-                    <input type="text" placeholder="Full Name" id="name" name="name" className="border placeholder-[#C8C8C8] border-[#E9E9E9] rounded-[4px] py-2 px-4 focus:ring-green-400 focus:border-[#00B894] outline-none" />
-                  </div>
-                  <div className="relative flex flex-col w-full">
-                    <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
-                    <input type="email" id="email" placeholder="E-mail" name="email" className="border placeholder-[#C8C8C8] border-[#E9E9E9] rounded-[4px] p-2 px-4 focus:ring-green-400 focus:border-[#00B894] outline-none" />
-                  </div>
+          <div className='max-w-[557px] min-w-[300px] w-full justify-evenly flex flex-col'>
+            <h3 className='text-[26px] leading-[40px] font-extrabold'><span className='text-[#00B894]'>Have any questions</span> or<br></br> looking for the best US Visa consulting?</h3>
+            <p className='text-[14px] leading-[26px] text-[#595959]'>With more than 25 combine years of experience we are your best immigration solution.</p>
+            <p className='text-[14px] leading-[26px] text-[#595959]'>Leave your details and one of our immigration experts will get touch with you yo answer!</p>
+          </div>
+          <div className="flex-wrap flex">
+            <form className="space-y-4" onSubmit={handleSubmit}>
+              <div className="flex flex-row gap-4 justify-between">
+                <div className="relative flex flex-col w-full">
+                  <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
+                  <input type="text" placeholder="Full Name" id="name" name="name" className="border placeholder-[#C8C8C8] border-[#E9E9E9] rounded-[4px] py-2 px-4 focus:ring-green-400 focus:border-[#00B894] outline-none" />
                 </div>
-                <div className="flex flex-row gap-4 justify-between">
-                  <div className="relative flex flex-col w-full">
-                    <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
-                    <input type="tel" id="phone" placeholder="Phone number" name="phone" className="border border-[#E9E9E9] rounded-[4px] p-2 px-4  placeholder-[#C8C8C8] focus:ring-green-400 focus:border-[#00B894] outline-none" />
-                  </div>
-                  <div className="relative flex flex-col w-full">
-                    <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
-                    <input type="question" id="question" placeholder="Type your question here" name="question" className="border border-[#E9E9E9] rounded-[4px] p-2 px-4  placeholder-[#C8C8C8] focus:ring-green-400 focus:border-[#00B894] outline-none" />
-                  </div>
+                <div className="relative flex flex-col w-full">
+                  <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
+                  <input type="email" id="email" placeholder="E-mail" name="email" className="border placeholder-[#C8C8C8] border-[#E9E9E9] rounded-[4px] p-2 px-4 focus:ring-green-400 focus:border-[#00B894] outline-none" />
                 </div>
-                <div className="flex flex-col">
-                  <button type="submit" disabled={isSubmitting} className="bg-[#00B894] text-white rounded-[4px] py-2 px-4 font-bold hover:bg-[#00B894]/80 active:bg-[#00B894]/50">Contact us</button>
-                  <div className="h-6">
-                    {status && (
-                      <p className="text-green-600">
-                        {status}
-                      </p>
-                    )}
-                  </div>
-                  <div className="text-[#909090] text-[12px] leading-[18px] font-[200]">
-                    By clicking the "contact us" button you agree to our <a className="text-[#00B894] font-normal" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/terms-and-conditions/">Terms and Conditions</a> and acknowledge that your information will be handled as detailed in our <a className="text-[#00B894] font-normal" target="_blank" rel="noopener noreferrer" href=" https://dvimmigration.org/privacy-policy/">Privacy Policy</a> You acknowledge that in order to continue the process our representative will contact you.
-                  </div>
+              </div>
+              <div className="flex flex-row gap-4 justify-between">
+                <div className="relative flex flex-col w-full">
+                  <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
+                  <input type="tel" id="phone" placeholder="Phone number" name="phone" className="border border-[#E9E9E9] rounded-[4px] p-2 px-4  placeholder-[#C8C8C8] focus:ring-green-400 focus:border-[#00B894] outline-none" />
                 </div>
-              </form>
-            </div>
+                <div className="relative flex flex-col w-full">
+                  <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
+                  <input type="question" id="question" placeholder="Type your question here" name="question" className="border border-[#E9E9E9] rounded-[4px] p-2 px-4  placeholder-[#C8C8C8] focus:ring-green-400 focus:border-[#00B894] outline-none" />
+                </div>
+              </div>
+              <div className="flex flex-col">
+                <button type="submit" disabled={isSubmitting} className="bg-[#00B894] text-white rounded-[4px] py-2 px-4 font-bold hover:bg-[#00B894]/80 active:bg-[#00B894]/50">Contact us</button>
+                <div className="h-6">
+                  {status && (
+                    <p className="text-green-600">
+                      {status}
+                    </p>
+                  )}
+                </div>
+                <div className="text-[#909090] text-[12px] leading-[18px] font-[200]">
+                  By clicking the "contact us" button you agree to our <a className="text-[#00B894] font-normal" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/terms-and-conditions/">Terms and Conditions</a> and acknowledge that your information will be handled as detailed in our <a className="text-[#00B894] font-normal" target="_blank" rel="noopener noreferrer" href=" https://dvimmigration.org/privacy-policy/">Privacy Policy</a> You acknowledge that in order to continue the process our representative will contact you.
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
