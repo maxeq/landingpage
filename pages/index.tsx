@@ -855,7 +855,7 @@ export default function Home() {
                   <tfoot className="flex justify-center flex-col my-4 border -mt-[6px] w-full border-l-0 border-r-0 border-b-0">
                     <tr className='h-full my-5 space-y-4'>
                       <td className="text-[32px] font-bold justify-center flex h-full items-center">
-                        $29.99
+                        $49.99
                       </td>
                       <td className=" justify-center items-center flex">
                         <button className="py-2 px-6 hover:bg-[#00B894]/80 active:bg-[#00B894]/50 font-bold hover:text-white bg-white text-black border border-[#00B894] rounded-[4px]">
