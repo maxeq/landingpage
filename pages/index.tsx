@@ -8,7 +8,7 @@ import Modal from 'react-modal';
 
 
 export default function Home() {
-  const [status, setStatus] = useState('');
+  const [status, setStatus] = useState({ message: '', isSuccess: false });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: any) => {
@@ -25,7 +25,7 @@ export default function Home() {
     const missingFields = requiredFields.filter(field => !data[field]);
 
     if (missingFields.length > 0) {
-      setStatus(`Fill out your ${missingFields.join(', ')}`);
+      setStatus({ message: `Fill out your ${missingFields.join(', ')}`, isSuccess: false });
       setIsSubmitting(false);
       return;
     }
@@ -41,14 +41,13 @@ export default function Home() {
       });
 
       const result = await response.json();
-      setStatus(result.message);
+      setStatus({ message: result.message, isSuccess: result.status === 'success' });
     } catch (error) {
-      setStatus('Error: ' + (error as Error).message);
+      setStatus({ message: 'Error: ' + (error as Error).message, isSuccess: false });
     } finally {
       setIsSubmitting(false);
     }
   };
-
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const toggleModal = () => {
@@ -433,7 +432,7 @@ export default function Home() {
           </div>
           <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
           <div className="flex flex-col">
-            <input type="tel" id="phone" placeholder="Phone number" name="phone" className="border border-[#E9E9E9] rounded-[4px] p-2 px-4  placeholder-[#C8C8C8] focus:ring-green-400 focus:border-[#00B894] outline-none" />
+            <input type="tel" id="phone" placeholder="Phone number with +" pattern="\+?\d*" name="phone" className="border border-[#E9E9E9] rounded-[4px] p-2 px-4  placeholder-[#C8C8C8] focus:ring-green-400 focus:border-[#00B894] outline-none" />
           </div>
           <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
           <div className="flex flex-col">
@@ -442,9 +441,9 @@ export default function Home() {
           <div className="flex flex-col">
             <button type="submit" disabled={isSubmitting} className="bg-[#00B894] text-white rounded-[4px] py-2 px-4 font-bold hover:bg-[#00B894]/80 active:bg-[#00B894]/50">Contact us</button>
             <div className="h-6">
-              {status && (
-                <p className="text-green-600">
-                  {status}
+              {status.message && (
+                <p className={status.isSuccess ? "text-green-600" : "text-red-600"}>
+                  {status.message}
                 </p>
               )}
             </div>
@@ -1140,7 +1139,7 @@ export default function Home() {
               <div className="flex flex-row gap-4 justify-between">
                 <div className="relative flex flex-col w-full">
                   <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
-                  <input type="tel" id="phone" placeholder="Phone number" name="phone" className="border border-[#E9E9E9] rounded-[4px] p-2 px-4  placeholder-[#C8C8C8] focus:ring-green-400 focus:border-[#00B894] outline-none" />
+                  <input type="tel" id="phone" placeholder="Phone number with +" pattern="\+?\d*" name="phone" className="border border-[#E9E9E9] rounded-[4px] p-2 px-4  placeholder-[#C8C8C8] focus:ring-green-400 focus:border-[#00B894] outline-none" />
                 </div>
                 <div className="relative flex flex-col w-full">
                   <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
@@ -1150,9 +1149,9 @@ export default function Home() {
               <div className="flex flex-col">
                 <button type="submit" disabled={isSubmitting} className="bg-[#00B894] text-white rounded-[4px] py-2 px-4 font-bold hover:bg-[#00B894]/80 active:bg-[#00B894]/50">Contact us</button>
                 <div className="h-6">
-                  {status && (
-                    <p className="text-green-600">
-                      {status}
+                  {status.message && (
+                    <p className={status.isSuccess ? "text-green-600" : "text-red-600"}>
+                      {status.message}
                     </p>
                   )}
                 </div>
