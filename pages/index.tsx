@@ -138,13 +138,29 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-8 whitespace-nowrap">
                 <div className="flex items-center gap-8 text-[16px] font-bold ">
-                  <p className="cursor-pointer"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
-                  <p className="cursor-pointer">About <span className="text-[#00B894]">Green</span> Card</p>
-                  <p className="cursor-pointer">FAQ</p>
+                  <Link to="visevsgcxz"
+                    smooth={true}
+                    duration={500}
+                    className="cursor-pointer">
+                    <span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</Link>
+                  <Link to="discover"
+                    smooth={true}
+                    duration={500}
+                    className="cursor-pointer">
+                    About <span className="text-[#00B894]">Green</span> Card</Link>
+                  <Link to="faq-desktop"
+                    smooth={true}
+                    duration={500}
+                    className="cursor-pointer">FAQ</Link>
                 </div>
-                <button className="bg-[#00B894] hover:bg-[#00B894]/80 rounded-[4px] py-2 px-[24px] text-white border items-center font-bold">
-                  Contact us
-                </button>
+                <Link to="contacts-desktop"
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer">
+                  <button className="bg-[#00B894] hover:bg-[#00B894]/80 rounded-[4px] py-2 px-[24px] text-white border items-center font-bold">
+                    Contact us
+                  </button>
+                </Link>
               </div>
             </nav>
           </div>
@@ -224,7 +240,7 @@ export default function Home() {
         <div className="compare-table flex flex-col item-start pt-8 gap-4 compare-table-wrapper">
           <div className="compare-background"></div>
           <div className="compare-table-title gap-1 px-4">
-            <p id="visevsgc" className="text-[24px] font-extrabold text-black"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
+            <p id="visevsgcx" className="text-[24px] font-extrabold text-black"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
             <p className="align-top py-3 ">Comparing the American visa and green card in all aspects of life will help you decide which option suits you best.</p>
           </div>
         </div>
@@ -376,7 +392,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="faq-block p-4  md:hidden">
+      <div className="faq-block p-4 md:hidden">
         <div className="text-[24px] my-4 font-extrabold leading-9 gap-4 flex-col item-start">
           <span className="text-[#00B894]">Green</span> Card FAQ
         </div>
@@ -555,12 +571,12 @@ export default function Home() {
           </div>
 
 
-          <div className='compare-background-desktop '>
+          <div id="visevsgcxz" className='compare-background-desktop '>
             <div className='content-container '>
               <div className="absolute compare-table flex flex-col item-start pt-14 compare-table-wrapper">
                 <div className=""></div>
                 <div className="">
-                  <p id="visevsgc" className="text-[32px] font-extrabold text-black"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
+                  <p className="text-[32px] font-extrabold text-black"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
                   <p className="align-top py-3 ">Comparing the American visa and green card in all aspects of life will help you decide which option<br></br> suits you best.</p>
                 </div>
               </div>
@@ -854,7 +870,7 @@ export default function Home() {
           </div>
         </div>
         {/* discover more desktop */}
-        <div className="advantages-block-desktop bg-[#F4F5F9]  hidden md:block">
+        <div id="discover" className="advantages-block-desktop bg-[#F4F5F9]  hidden md:block">
           <div className='content-container'>
             <div className="flex flex-col py-16">
               <h4 id="about" className="text-[32px] leading-[48px] font-extrabold text-black">Discover more about <span className="text-[#00B894]">Green Card</span> advantages</h4>
@@ -1074,7 +1090,7 @@ export default function Home() {
         <div>
 
         </div>
-        <div className='compare-background-desktop  hidden md:block lg:block'>
+        <div id="faq-desktop" className='compare-background-desktop hidden md:block lg:block'>
           <div className='content-container '>
             <div className="faq-blockrelative py-16">
               <div className="text-[32px] font-extrabold leading-[48px] gap-4 flex-col item-start mb-6">
@@ -1102,7 +1118,7 @@ export default function Home() {
       </div >
 
       {/* have any questions desktop */}
-      <div className='bg-[#F4F5F9] hidden md:block lg:block'>
+      <div id="contacts-desktop" className='bg-[#F4F5F9] hidden md:block lg:block'>
         <div className='content-container flex lg:flex-row md:flex-col py-16 md:gap-5 lg:gap-28'>
           <div className='max-w-[557px] min-w-[300px] w-full justify-evenly flex flex-col'>
             <h3 className='text-[26px] leading-[40px] font-extrabold'><span className='text-[#00B894]'>Have any questions</span> or<br></br> looking for the best US Visa consulting?</h3>
@@ -1159,31 +1175,30 @@ export default function Home() {
               <div id="contacts" className="font-bold text-[18px] mb-8">Contacts</div>
               <div className="flex gap-6 items-start">
                 <div className="flex font-[200]"><img src="img/adv/Vector-12.svg" alt="Call" className="mr-2 font-[200]" />Call:</div>
-                <div className='font-bold'> +13473913730</div>
+                <div> +13473913730</div>
               </div>
               <div className="flex gap-6 items-start">
                 <div className="flex font-[200]"><img src="img/adv/Vector-13.svg" alt="Call" className="mr-2 font-[200]" />E-Mail:</div>
-                <div className='font-bold'>support@dvimmigration.org</div>
+                <div>support@dvimmigration.org</div>
               </div>
               <div className="flex gap-6 items-start">
                 <div className="flex font-[200]"><img src="img/adv/Vector-14.svg" alt="Address" className="mr-2 font-[200]" />Address:</div>
-                <div className='font-bold'>Katalanou, 1, 1st floor, office 101,<br></br> Aglantzia, 2121, Nicosia, Cyprus</div>
+                <div>Katalanou, 1, 1st floor, office 101,<br></br> Aglantzia, 2121, Nicosia, Cyprus</div>
               </div>
             </div>
             <div>
               <div className="text-[18px] mb-8 font-bold">More</div>
               <div className="flex flex-col gap-2">
-                <a className=" font-[200] leading-[22px]" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/privacy-policy/">
+                <a className="font-[200] leading-[22px]" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/privacy-policy/">
                   Privacy Policy
                 </a>
-                <a className=" font-[200] leading-[22px]" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/terms-and-conditions/">
+                <a className="font-[200] leading-[22px]" target="_blank" rel="noopener noreferrer" href="https://dvimmigration.org/terms-and-conditions/">
                   Terms and Conditions
                 </a>
                 <div className="flex gap-5 mt-8 mr-8">
                   <img src="img/adv/Vector-15.svg" alt="Address" className="mr-2" />
                   <img src="img/visa.svg" alt="Address" className="mr-2" />
                 </div>
-
               </div>
             </div>
           </div>
