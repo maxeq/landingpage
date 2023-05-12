@@ -239,7 +239,7 @@ export default function Home() {
         <div className="compare-table flex flex-col item-start pt-8 gap-4 compare-table-wrapper">
           <div className="compare-background"></div>
           <div className="compare-table-title gap-1 px-4">
-            <p id="visevsgcx" className="text-[24px] font-extrabold text-black"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
+            <p id="visevsgc" className="text-[24px] font-extrabold text-black"><span className="text-[#0A3161]">U</span><span className="text-[#B31942]">S</span> Visa vs. <span className="text-[#00B894]">Green</span> Card</p>
             <p className="align-top py-3 ">Comparing the American visa and green card in all aspects of life will help you decide which option suits you best.</p>
           </div>
         </div>
@@ -433,6 +433,7 @@ export default function Home() {
           <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
           <div className="flex flex-col">
             <input type="tel" id="phone" placeholder="Phone number with +" pattern="\+?\d*" name="phone" className="border border-[#E9E9E9] rounded-[4px] p-2 px-4  placeholder-[#C8C8C8] focus:ring-green-400 focus:border-[#00B894] outline-none" />
+
           </div>
           <div className="absolute text-red-600 text-[24px] ml-5" style={{ transform: 'translateY(-9px)' }}>*</div>
           <div className="flex flex-col">
@@ -534,7 +535,7 @@ export default function Home() {
                     <button className="bg-[#00B894] hover:bg-[#00B894]/80 active:bg-[#00B894]/50 border-[#00B894] text-white border rounded-[6px] px-6 py-2 mr-4">
                       <a href="https://dvimmigration.org/services/apply-now/" target="_blank" rel="noopener noreferrer">Apply Now</a>
                     </button>
-                    <Link to="visevsgc"
+                    <Link to="visevsgcxz"
                       smooth={true}
                       duration={500}
                       className="border hover:border-[#00B894]/80 hover:bg-[#00B894]/80 hover:text-white active:border-[#00B894]/50 border-[#00B894] rounded-[6px] px-6 py-2 hover:text-black">
