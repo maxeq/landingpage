@@ -1120,7 +1120,7 @@ export default function Home() {
           <div className='max-w-[557px] min-w-[300px] w-full justify-evenly flex flex-col'>
             <h3 className='text-[26px] leading-[40px] font-extrabold'><span className='text-[#00B894]'>Have any questions</span> or<br></br> looking for the best US Visa consulting?</h3>
             <p className='text-[14px] leading-[26px] text-[#595959]'>With more than 25 combine years of experience we are your best immigration solution.</p>
-            <p className='text-[14px] leading-[26px] text-[#595959]'>Leave your details and one of our immigration experts will get touch with you yo answer!</p>
+            <p className='text-[14px] leading-[26px] text-[#595959]'>Leave your details and one of our immigration experts will get in touch with you!</p>
           </div>
           <div className="flex-wrap flex">
             <form className="space-y-4" onSubmit={handleSubmit}>
