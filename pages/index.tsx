@@ -112,7 +112,7 @@ export default function Home() {
     },
   ];
   return (
-    <main>
+    <main className="overflow-hidden">
       <header className="relative md:h-[112px]">
         <div className="desktop-nav-wrapper w-full bg-white">
           <div className="md:max-w-[1440px] mx-auto">
