@@ -163,6 +163,7 @@ tr:hover {
   margin-right: -50vw; 
   background: url('/img/compare-table.jpg') no-repeat center center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .sale-line-bg {

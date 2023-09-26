@@ -1088,7 +1088,7 @@ export default function Home() {
 
         </div>
         <div id="faq-desktop" className='compare-background-desktop hidden md:block lg:block'>
-          <div className='content-container '>
+          <div className='content-container'>
             <div className="faq-blockrelative py-16">
               <div className="text-[32px] font-extrabold leading-[48px] gap-4 flex-col item-start mb-6">
                 <span className="text-[#00B894] text-[32px] leading-[48px] font-extrabold">Green</span> Card FAQ
